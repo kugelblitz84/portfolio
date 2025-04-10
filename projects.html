@@ -1,0 +1,64 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Showcase | Sadi Mahmud</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Project Showcase</h1>
+    <p>Here are some snapshots of the apps I've built</p>
+    <a href="index.html">← Back to Portfolio</a>
+  </header>
+
+  <section class="project">
+    <h2>Chat App</h2>
+    <div class="carousel">
+      <img src="images/chat/login.png" alt="Chat App UI 1" data-fullscreen>
+      <img src="images/chat/signup.png" alt="Chat App UI 2" data-fullscreen>
+      <img src="images/chat/chats.png" alt="Chat App UI 3" data-fullscreen>
+      <img src="images/chat/nonemptychat.png" alt="Chat App UI 4" data-fullscreen>
+      <img src="images/chat/drawer.png" alt="Chat App UI 5" data-fullscreen>
+      <img src="images/chat/pending.png" alt="Chat App UI 6" data-fullscreen>
+    </div>
+    <p>This full-stack chat app features real-time messaging, friend requests, and authentication using Firebase and GetX.</p>
+  </section>
+
+  <section class="project">
+    <h2>Weather App</h2>
+    <div class="carousel">
+      <img src="images/weather/Weather-info.png" alt="Weather App UI" data-fullscreen>
+    </div>
+    <p>A frontend weather app built with Flutter and OpenWeatherMap API to show current weather conditions.</p>
+  </section>
+
+  <section class="project">
+    <h2>TripStins</h2>
+    <div class="carousel">
+      <img src="images/trip/homepage.png" alt="TripStins UI 1" data-fullscreen>
+      <img src="images/trip/login.png" alt="TripStins UI 2" data-fullscreen>
+      <img src="images/trip/signup.png" alt="TripStins UI 2" data-fullscreen>
+      <img src="images/trip/userprofile.png" alt="TripStins UI 2" data-fullscreen>
+      <img src="images/trip/drawer.png" alt="TripStins UI 2" data-fullscreen>
+    </div>
+    <video class="project-video" controls autoplay muted loop data-fullscreen>
+      <source src="videos/TripStins.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p>This ongoing app lets users book hotels, hire tour guides, write/read travel vlogs, and manage transportation.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sadi Mahmud</p>
+  </footer>
+
+  <!-- Fullscreen Overlay -->
+  <div id="fullscreenOverlay" class="fullscreen-overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
