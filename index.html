@@ -9,123 +9,162 @@
 </head>
 
 <body>
+  <!-- Site header / navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Md. Sadi Mahmud</h1>
+        <p class="subtitle">Flutter Developer · Full‑stack · Competitive Programmer</p>
+      </div>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Md.Sadi Mahmud</h1>
-    <p>Flutter Developer & Competitive Programmer</p>
+      <nav class="nav" aria-label="Primary Navigation">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#tools">Skills</a></li>
+          <li><a href="#pcist">pcIST</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="projects.html">Showcase</a></li>
+        </ul>
+        <div class="header-actions">
+          <button id="themeToggle" class="btn btn-ghost" aria-pressed="false">🌗</button>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <!-- About Section -->
-  <section class="about visible">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate Flutter developer with experience in building mobile apps using the Flutter framework.
-      I specialize in creating engaging and responsive applications, focusing on clean code and seamless user experience.
-    </p>
-    <p>
-      I have hands-on experience with beginner to intermediate-level data structures and algorithms,
-      focusing on optimizing time and space complexity.
-    </p>
-    <p>
-      I have participated in several <strong>IUPC</strong>, the final round of
-      <strong>NCPC 2023</strong> and <strong>ICPC Dhaka Regional 2024</strong>, my current Codeforces rank is <strong>Pupil</strong>.
-    </p>
-  </section>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p class="lead">I’m a passionate Flutter developer with experience building cross‑platform apps (mobile & desktop) and full‑stack systems. I focus on clean architecture, pragmatic state management (GetX), and resilient APIs.</p>
 
-  <!-- Projects Section -->
-  <section class="projects visible">
-    <h2>Flutter Projects</h2>
+        <div class="grid two-col">
+          <div>
+            <p>I implement authentication (Firebase Auth & OTP flows), push notifications (FCM), and backend integrations using Express.js + MongoDB. I write Firebase Cloud Functions for secure server-side logic and token workflows.</p>
+            <p>I have experience with PDF generation & streaming downloads, file management across platforms, Socket.IO chat integration, and robust API clients using Dio.</p>
+          </div>
+          <div>
+            <ul class="summary-list">
+              <li><strong>Competitive programming:</strong> ICPC Dhaka Regional 2024, NCPC 2023, IUPC — Codeforces: 1201</li>
+              <li><strong>Languages & tools:</strong> Dart/Flutter, JavaScript/Node, C++, Firebase, GetX, Dio, MongoDB</li>
+              <li><strong>Notable:</strong> Built messenger app (Firebase), pcIST cross‑platform admin app (GetX + Firebase + Node backend)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h3>Frontend</h3>
-    <ul>
-      <li>
-        <strong>Weather App</strong> – Uses OpenWeatherMap API to display real-time weather updates.
-        [<a href="https://github.com/kugelblitz84/Weather-Info" target="_blank">View on GitHub</a>]
-      </li>
-      <li>
-        <strong>TripStins App (Ongoing)</strong> – A team project built with Flutter, designed to enhance travel experiences. The app offers a wide range of services including hiring local tour guides, reading and writing travel vlogs, booking hotels and transportation, and discovering popular tourist destinations.
-        [<a href="https://github.com/kugelblitz84/TripStins" target="_blank">View on GitHub</a>]
-      </li>
-    </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Projects & Work</h2>
 
-    <h3>Full Stack</h3>
-    <ul>
-      <li>
-        <strong>Chat App</strong> – Built with Firebase & Firestore.
-        [<a href="https://github.com/kugelblitz84/ChatterBox" target="_blank">View on GitHub</a>]
-        <br />
-        Features:
+        <div class="grid cards">
+          <article class="card">
+            <h3>Chat App (Full‑stack)</h3>
+            <p>Realtime messaging with Firebase/Firestore, friend requests, and GetX state management.</p>
+            <p><a href="https://github.com/kugelblitz84/ChatterBox" target="_blank">GitHub — ChatterBox</a></p>
+          </article>
+
+          <article class="card">
+            <h3>pcIST (Admin & Member App)</h3>
+            <p>Cross‑platform Flutter app for club administration: authentication, document workflows (PAD / Invoices), event management, Socket.IO chat, downloads hub, and per‑platform filesystem handling.</p>
+            <p class="placeholder"><!-- PLACEHOLDER: Add pcIST screenshots, demo link, and feature highlights here. --> </p>
+          </article>
+
+          <article class="card">
+            <h3>TripStins (Ongoing)</h3>
+            <p>Travel app with hotel/guide booking, travel vlogs, and discovery features.</p>
+            <p><a href="https://github.com/kugelblitz84/TripStins" target="_blank">GitHub — TripStins</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Weather App</h3>
+            <p>OpenWeatherMap integration. Clean UI and responsive layouts.</p>
+            <p><a href="https://github.com/kugelblitz84/Weather-Info" target="_blank">GitHub — Weather Info</a></p>
+          </article>
+        </div>
+
+        <p class="center"><a href="projects.html" class="showcase-btn">Full Project Showcase</a></p>
+      </div>
+    </section>
+
+    <!-- Skills / Tools -->
+    <section id="tools" class="tools">
+      <div class="container">
+        <h2>Skills & Tools</h2>
+        <div class="skill-badges">
+          <span class="badge">Flutter</span>
+          <span class="badge">Dart</span>
+          <span class="badge">Firebase</span>
+          <span class="badge">GetX</span>
+          <span class="badge">Node / Express</span>
+          <span class="badge">MongoDB</span>
+          <span class="badge">Dio</span>
+          <span class="badge">Socket.IO</span>
+          <span class="badge">FCM</span>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <h4>Languages</h4>
+            <ul>
+              <li>C / C++</li>
+              <li>Dart (Flutter)</li>
+              <li>JavaScript / Node</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Other</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>CI & Deployment (pm2, Nginx, VPS)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Programming / Profiles -->
+    <section id="profiles" class="cp-profiles">
+      <div class="container">
+        <h2>Competitive Programming & Profiles</h2>
         <ul>
-          <li>User Sign Up / Sign In</li>
-          <li>Send & Accept Friend Requests</li>
-          <li>Search Users by Email</li>
-          <li>Live Chat using StreamBuilders</li>
+          <li><strong>Codeforces:</strong> <a href="https://codeforces.com/profile/sadimahmud225" target="_blank">sadimahmud225</a></li>
+          <li><strong>LeetCode:</strong> <a href="https://leetcode.com/u/sad_i_mahmodulo100/" target="_blank">sad_i_mahmodulo100</a></li>
+          <li><strong>Vjudge:</strong> <a href="https://vjudge.net/user/sadimahmud" target="_blank">sadimahmud</a></li>
         </ul>
-        <em>State Management: GetX</em>
-      </li>
-    </ul>
-    <a href="projects.html" class="showcase-btn">Projects Overview</a>
-  </section>
+        <p class="small">ICPC Dhaka Regional 2024, NCPC 2023 — Codeforces rating: <strong>1201</strong>.</p>
+      </div>
+    </section>
 
-  <!-- Tools Section -->
-  <section class="tools visible">
-    <h2>Tools & Languages</h2>
-    <ul>
-      <li><strong>Git & GitHub</strong> – Version control & project hosting</li>
-      <li><strong>VS Code</strong> – Code editing</li>
-      <li><strong>Firebase & Firestore</strong> – Backend for mobile apps</li>
-    </ul>
-    <ul>
-      <li><strong>Languages</strong> – C, C++, Dart, Python(Beginner level)</li>
-      <li><strong>Frameworks & Libraries</strong> – Flutter(Dart), STL(C++)</li>
-      <!-- <li><strong>Firebase & Firestore</strong> – Backend for mobile apps</li> -->
-    </ul>
-  </section>
+    <!-- Contact / Connect -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Connect With Me</h2>
+        <p>Find me on:</p>
+        <ul class="socials">
+          <li><a href="https://github.com/kugelblitz84" target="_blank">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank">LinkedIn</a></li>
+        </ul>
+        <p><strong>Contact:</strong> 01986311047</p>
+        <p><strong>E-mail:</strong> <a href="mailto:sadimahmud22@gmail.com">sadimahmud22@gmail.com</a></p>
+      </div>
+    </section>
 
-  <!-- Competitive Programming Profiles Section -->
-  <section class="cp-profiles visible">
-    <h2>My Competitive Programming Profiles</h2>
-    <ul>
-      <li>
-        <strong>Codeforces:</strong>
-        <a href="https://codeforces.com/profile/sadimahmud225" target="_blank">https://codeforces.com/profile/sadimahmud225</a>
-      </li>
-      <li>
-        <strong>LeetCode:</strong>
-        <a href="https://leetcode.com/u/sad_i_mahmodulo100/" target="_blank">https://leetcode.com/u/sad_i_mahmodulo100/</a>
-      </li>
-      <li>
-        <strong>Vjudge:</strong>
-        <a href="https://vjudge.net/user/sadimahmud" target="_blank">https://vjudge.net/user/sadimahmud</a>
-      </li>
-    </ul>
-    <p>
-      I have hands-on experience with beginner to intermediate-level data structures and algorithms,
-      focusing on optimizing time and space complexity. I participated in several <strong>IUPC</strong> and the final round of
-      <strong>NCPC 2023</strong> and <strong>ICPC Dhaka Regional 2024</strong>, and my current Codeforces rank is <strong>Pupil</strong>.
-    </p>
-  </section>
+    <!-- pcIST details placeholder -->
+    <section id="pcist" class="pcist">
+      <div class="container">
+        <h2>pcIST — Feature Snapshot</h2>
+        <p class="placeholder"><!-- PLACEHOLDER: Add screenshots, link to repo/demo, and brief technical notes (GetX, Dio, FCM, Node/Express backend) --> </p>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="contact visible">
-    <h2>Connect With Me</h2>
-    <p>Find me on:</p>
-    <ul class="socials">
-      <li><a href="https://github.com/kugelblitz84" target="_blank">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank">LinkedIn</a></li>
-      <!-- <li><a href="#" target="_blank">Facebook</a></li> -->
-      </ul>
-      <p>
-        <strong>Contact:</strong> – 01986311047
-      </p>
-      <p>
-        <strong>E-mail</strong> – sadimahmud22@gmail.com
-      </p>
-      
-      
-      
-      </section>
+  </main>
 
   <!-- Footer Section -->
   <footer>
@@ -134,6 +173,8 @@
   </footer>
 
   <!-- JavaScript File -->
+  <!-- Fullscreen Overlay (used by project pages and images) -->
+  <div id="fullscreenOverlay" class="fullscreen-overlay"></div>
   <script src="script.js"></script>
 </body>
 
