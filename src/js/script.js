@@ -26,18 +26,6 @@ const toggleSwitch = document.querySelector(
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
-}
-
-toggleSwitch.addEventListener("change", switchTheme, false);
-
-//  Store color theme for future visits
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark"); //add this
   } else {
     document.documentElement.setAttribute("data-theme", "light");
@@ -45,18 +33,19 @@ function switchTheme(e) {
   }
 }
 
+toggleSwitch.addEventListener("change", switchTheme, false);
+
 // Save user preference on load
 
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
+const currentTheme = localStorage.getItem("theme");
 
-if (currentTheme) {
+if (currentTheme === "dark" || currentTheme === "light") {
   document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "dark") {
-    toggleSwitch.checked = true;
-  }
+  toggleSwitch.checked = currentTheme === "dark";
+} else {
+  // Default theme (first visit)
+  document.documentElement.setAttribute("data-theme", "dark");
+  toggleSwitch.checked = true;
 }
 
 //Adding date
