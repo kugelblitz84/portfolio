@@ -142,7 +142,10 @@ body {
 
 .profile-image {
   width: 150px;
+  height: 150px;
   border-radius: 50%;
+  object-fit: cover;
+  display: block;
   animation: bounce 1s infinite alternate;
 }
 
@@ -192,18 +195,14 @@ body {
 .project-info {
   display: flex;
   justify-content: space-between;
-  opacity: 0;
-  position: relative;
-  transition: 0.5s ease-in-out;
+  align-items: flex-start;
+  margin-top: 0.75rem;
 }
 
 .project-bio {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  position: relative;
-  top: 160px;
-  left: 10px;
+  justify-content: flex-start;
 }
 
 /* Footer */
