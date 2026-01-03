@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Primary Meta Tags -->
     <title>Sadi Mahmud | Flutter Developer & Competitive Programmer</title>
     <meta name="title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
     <meta
@@ -14,67 +13,30 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="#"
-    />
-
+    <meta property="og:url" content="#" />
     <meta property="og:title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
     <meta
       property="og:description"
       content="Computer Science student and Flutter-focused software developer with strong problem-solving skills, competitive programming background, and real-world production experience."
     />
-    <meta
-      property="og:image"
-      content="assets/profile-image.jpg"
-    />
+    <meta property="og:image" content="assets/profile-image.jpg" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta
-      property="twitter:url"
-      content="#"
-    />
+    <meta property="twitter:url" content="#" />
     <meta property="twitter:title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
     <meta
       property="twitter:description"
       content="Portfolio of Sadi Mahmud showcasing Flutter apps, full-stack projects, and competitive programming achievements."
     />
-    <meta
-      property="twitter:image"
-      content="assets/profile-image.jpg"
-    />
+    <meta property="twitter:image" content="assets/profile-image.jpg" />
 
-    <!-- Link -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/assets/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="assets/favicon/android-chrome-512x512.png"
-    />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link
@@ -87,532 +49,240 @@
     <link rel="stylesheet" href="css/utilities.css" />
   </head>
   <body>
-    <header id="hero">
-      <!-- Navbar -->
-      <nav class="navbar">
-        <div class="container">
-          <!-- Logo -->
-          <h1 id="logo">
-            <a href="#hero"
-              ><img src="./assets/logo.png" alt="Sadi Mahmud logo"
-            /></a>
-          </h1>
-          <!-- Navbar links -->
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
-            <li><a class="nav-link" href="#about">ABOUT</a></li>
-            <li><a class="nav-link" href="#contact">CONTACT</a></li>
-            <li>
-              <a
-                class="nav-link btn btn-primary"
-                href="assets/Sadi Mahmud_CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >RESUME / CV <i class="fas fa-arrow-right"></i
-              ></a>
-            </li>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 id="logo">
+          <a href="index.html"><img src="./assets/logo.png" alt="Sadi Mahmud logo" /></a>
+        </h1>
+        <ul class="nav-menu">
+          <li><a class="nav-link active" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li>
+            <a
+              class="nav-link btn btn-primary"
+              href="assets/Sadi Mahmud_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume <i class="fas fa-arrow-right"></i></a>
+          </li>
+          <div class="theme-switch">
+            <input type="checkbox" id="switch" checked />
+            <label class="toggle-icons" for="switch">
+              <img class="moon" src="assets/moon.svg" alt="Dark mode" />
+              <img class="sun" src="assets/sun.svg" alt="Light mode" />
+            </label>
+          </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
 
-            <!-- Toggle switch -->
-            <div class="theme-switch">
-              <input type="checkbox" id="switch" checked />
-              <label class="toggle-icons" for="switch">
-                <img class="moon" src="assets/moon.svg" />
-                <img class="sun" src="assets/sun.svg" />
-              </label>
-            </div>
-            <!-- Hamburger menu -->
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Sadi Mahmud</h1>
+          <h2 class="hero-title">Flutter Developer <span>&</span> Competitive Programmer</h2>
+          <p class="hero-description">
+            Building real-world Flutter apps and full-stack products end-to-end,
+            from clean UI and APIs to deployment.
+          </p>
+          <div class="hero-cta">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:sadimahmud225@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
           </div>
         </div>
-      </nav>
-
-      <section class="header-container">
-        <img
-          class="profile-image"
-          src="assets/profile-image.jpg"
-          alt="Portrait of Sadi Mahmud"
-        />
-        <h1>Hi, I'm Sadi Mahmud</h1>
-
-        <div class="content-text">
-          <h2>Flutter-focused full-stack software developer</h2>
-          <h2>and competitive programming enthusiast.</h2>
-
-          <p>
-            Computer Science student building real-world Flutter apps and full-stack products end-to-end, from clean UI and APIs to deployment.
-          </p>
+        <div class="hero-image">
+          <div class="hero-image-wrapper">
+            <img src="assets/profile-image.jpg" alt="Portrait of Sadi Mahmud" />
+          </div>
         </div>
-        <a
-          href="#contact"
-          class="btn btn-secondary"
-          >Connect With Me</a
-        >
-      </section>
+      </div>
     </header>
 
-    <main>
-      <!-- About -->
-      <section id="about" class="about-section container">
-        <div class="division"></div>
-        <div class="content-text">
-          <h2>About Me</h2>
-          <p>
-            I’m a Computer Science student and Flutter-focused software developer with hands-on experience
-            building real-world applications from UI to production deployment. My background blends competitive
-            programming, mobile development, and backend engineering, and I enjoy turning ideas into scalable,
-            practical products.
-          </p>
-          <p>
-            Competitive programming has shaped how I think about performance, edge cases, and reliability. I bring
-            that same mindset to every codebase I work on.
-          </p>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="skills-section container">
-        <div class="content-text">
-          <h2>Core Skills</h2>
-          <p>My work focuses on Flutter, problem solving, and production-ready software.</p>
-        </div>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Mobile & Frontend</h3>
-            <ul>
-              <li>Flutter (Dart) – cross-platform apps</li>
-              <li>UI/UX implementation from designs</li>
-              <li>State management & REST API integration</li>
-              <li>Flutter Web (for demos & prototypes)</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Backend & Full-Stack</h3>
-            <ul>
-              <li>Node.js & Express.js</li>
-              <li>REST API design & integration</li>
-              <li>Firebase (Auth, Firestore, integrations)</li>
-              <li>Backend development with TypeScript</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Problem Solving</h3>
-            <ul>
-              <li>C++ as primary competitive programming language</li>
-              <li>Data Structures & Algorithms</li>
-              <li>Strong analytical and logical reasoning</li>
-              <li>Performance-oriented coding mindset</li>
-            </ul>
-          </div>
-          <div class="skill-card">
-            <h3>Web & DevOps</h3>
-            <ul>
-              <li>React, TypeScript, Vite</li>
-              <li>Basic Vue (project-based experience)</li>
-              <li>VPS setup & deployment (Linux servers)</li>
-              <li>End-to-end lifecycle: dev → deploy</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Achievements & Experience -->
-      <section id="experience" class="experience-section container">
-        <div class="experience-grid">
-          <div class="experience-column">
-            <div class="content-text">
-              <h2>Achievements</h2>
-            </div>
-            <ul class="list-block">
-              <li>ICPC Regional Contestant</li>
-              <li>NCPC 2023 – Final Round Contestant</li>
-              <li>Active competitive programmer with strong algorithmic foundation</li>
-              <li>Experience solving complex problems under time pressure</li>
-            </ul>
-          </div>
-          <div class="experience-column">
-            <div class="content-text">
-              <h2>Experience</h2>
-            </div>
-            <div class="experience-card">
-              <h3>Flutter Developer Intern (Remote, Unpaid)</h3>
-              <p class="experience-duration">Duration: 4 Months</p>
-              <ul>
-                <li>Developed and maintained Flutter mobile application features.</li>
-                <li>Integrated APIs and backend services into Flutter apps.</li>
-                <li>Assisted with debugging, testing, and UI improvements.</li>
-                <li>Worked within a production-oriented workflow and codebase.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <!-- Tools & Interests -->
-      <section id="tools" class="tools-section container">
-        <div class="content-text">
-          <h2>Tools & Technologies</h2>
-          <p>A snapshot of the technologies I use most often.</p>
-        </div>
-        <div class="tag-list">
-          <span class="tag">Flutter / Dart</span>
-          <span class="tag">C++</span>
-          <span class="tag">Node.js / Express</span>
-          <span class="tag">Firebase</span>
-          <span class="tag">React</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Vite</span>
-          <span class="tag">REST APIs</span>
-          <span class="tag">Git & GitHub</span>
-          <span class="tag">VPS / Linux Servers</span>
-        </div>
-      </section>
-    
-
-      <!-- Projects -->
-      <section id="projects" class="project-container container">
-        <div class="division"></div>
-        <div class="content-text">
-          <h2>Projects</h2>
-          <p>End-to-end work with full screenshots and demo videos.</p>
-        </div>
-
-        <div class="projects-showcase">
-          <!-- pcIST Platform -->
-          <article class="project-block" aria-label="pcIST Platform">
-            <header class="project-header">
-              <div>
-                <h3>pcIST Platform</h3>
-                <p class="project-subtitle">Club management suite for membership, events, and contest tracking.</p>
-              </div>
-              <div class="project-actions">
-                <a class="btn btn-primary" href="https://github.com/kugelblitz84/pcist" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github"></i></a>
-                <a class="btn btn-secondary" href="https://drive.google.com/file/d/15Di_1UT_DVfrbNZyh-hxq4hefiqwF03j/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download APK <i class="fas fa-download"></i></a>
-              </div>
-            </header>
-
-            <div class="project-body">
-              <ul class="project-bullets">
-                <li>Full-stack platform for digitizing club activities, with event and member management and event gallery (Cloudinary).</li>
-                <li>JWT/OTP authentication, role-based access control, and API request validation using Zod.</li>
-                <li>Real-time features: admin chat, FCM push notifications, and contest tracking across 30+ competitive programming platforms.</li>
-                <li>Automated PDF generation (invoices), email workflows, and task scheduling.</li>
-                <li>Supports uploading PDFs and generating pads via backend-driven processing and decorations.</li>
-              </ul>
-
-              <div class="project-tech">
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">MongoDB</span>
-                <span class="tag">Mongoose</span>
-                <span class="tag">Flutter</span>
-                <span class="tag">GetX</span>
-                <span class="tag">Socket.IO</span>
-                <span class="tag">JWT</span>
-                <span class="tag">FCM</span>
-                <span class="tag">Cloudinary</span>
-                <span class="tag">Zod</span>
-              </div>
-
-              <div class="project-media-block">
-                <h4 class="project-media-title">Demo Videos</h4>
-                <div class="project-media-videos">
-                  <figure>
-                    <video class="project-video" src="assets/project/pcIST/Login%20%26%20Dashboards.mp4" controls preload="metadata"></video>
-                    <figcaption>Login flow and role-based dashboards</figcaption>
-                  </figure>
-                  <figure>
-                    <video class="project-video" src="assets/project/pcIST/Membership%20Managing.mp4" controls preload="metadata"></video>
-                    <figcaption>Membership management workflows</figcaption>
-                  </figure>
-                  <figure>
-                    <video class="project-video" src="assets/project/pcIST/Events%20&%20Contest%20Tracking.mp4" controls preload="metadata"></video>
-                    <figcaption>Event management and contest tracking</figcaption>
-                  </figure>
-                  <figure>
-                    <video class="project-video" src="assets/project/pcIST/Document%20creation.mp4" controls preload="metadata"></video>
-                    <figcaption>Document creation (PDF generation / invoices)</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Dhaka Plastic & Metals -->
-          <article class="project-block" aria-label="Dhaka Plastic & Metals">
-            <header class="project-header">
-              <div>
-                <h3>Dhaka Plastic & Metals</h3>
-                <p class="project-subtitle">E-commerce production system contribution (customer, admin, and backend).</p>
-              </div>
-              <div class="project-actions">
-                <a class="btn btn-secondary" href="https://dpmsign.com" target="_blank" rel="noopener noreferrer">Live Site <i class="fas fa-globe"></i></a>
-              </div>
-            </header>
-
-            <div class="project-body">
-              <ul class="project-bullets">
-                <li>Led end-to-end production deployment for a full-stack e-commerce platform (customer site, admin panel, API).</li>
-                <li>Established a complete CI/CD pipeline using GitHub Actions and SSH automation for VPS environments.</li>
-                <li>Delivered 30+ features, including analytics dashboards, performance charts, and payment installment support.</li>
-                <li>Applied comprehensive SEO (meta tags, Open Graph, URL canonicalization via Nginx).</li>
-                <li><strong>My role:</strong> Worked across both frontend and backend (plus production setup).</li>
-              </ul>
-
-              <div class="project-tech">
-                <span class="tag">TypeScript</span>
-                <span class="tag">React</span>
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">REST APIs</span>
-                <span class="tag">GitHub Actions</span>
-                <span class="tag">CI/CD</span>
-                <span class="tag">Nginx</span>
-                <span class="tag">VPS</span>
-                <span class="tag">SEO</span>
-              </div>
-
-              <div class="project-media-block">
-                <h4 class="project-media-title">Media</h4>
-                <div class="project-media-placeholder">Screenshots/videos are not included in this portfolio folder for this project.</div>
-              </div>
-            </div>
-          </article>
-
-          <!-- ChatterBox -->
-          <article class="project-block" aria-label="ChatterBox">
-            <header class="project-header">
-              <div>
-                <h3>ChatterBox</h3>
-                <p class="project-subtitle">Real-time messaging app with social graph features and presence tracking.</p>
-              </div>
-              <div class="project-actions">
-                <a class="btn btn-primary" href="https://github.com/kugelblitz84/ChatterBox" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github"></i></a>
-              </div>
-            </header>
-
-            <div class="project-body">
-              <ul class="project-bullets">
-                <li>Built a peer-to-peer messaging app with social graph features, private chatrooms, and real-time presence tracking.</li>
-                <li>Enforced Firebase Authentication and Firestore for persistent data.</li>
-                <li><strong>My role:</strong> Implemented both app features and backend integrations.</li>
-              </ul>
-
-              <div class="project-tech">
-                <span class="tag">Flutter</span>
-                <span class="tag">GetX</span>
-                <span class="tag">Firebase Auth</span>
-                <span class="tag">Cloud Firestore</span>
-                <span class="tag">FlutterFire CLI</span>
-              </div>
-
-              <div class="project-media-block">
-                <h4 class="project-media-title">Screenshots</h4>
-                <div class="project-media-grid">
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/login.png" alt="ChatterBox login screen" />
-                    <figcaption>Login</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/signup.png" alt="ChatterBox signup screen" />
-                    <figcaption>Sign up</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/chats.png" alt="ChatterBox chat list" />
-                    <figcaption>Chat list</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/nonemptychat.png" alt="ChatterBox active conversation" />
-                    <figcaption>Conversation view</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/emptychat.png" alt="ChatterBox empty conversation" />
-                    <figcaption>Empty state</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/drawer.png" alt="ChatterBox navigation drawer" />
-                    <figcaption>Navigation drawer</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/ChatterBox/pending.png" alt="ChatterBox pending requests" />
-                    <figcaption>Pending requests</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- MediCare -->
-          <article class="project-block" aria-label="MediCare">
-            <header class="project-header">
-              <div>
-                <h3>MediCare</h3>
-                <p class="project-subtitle">Hospital management system with multi-role dashboards and scheduling.</p>
-              </div>
-              <div class="project-actions">
-                <a class="btn btn-primary" href="https://github.com/kugelblitz84/hospital-manager-uni" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github"></i></a>
-              </div>
-            </header>
-
-            <div class="project-body">
-              <ul class="project-bullets">
-                <li>A multi-role app with state management and business logic implemented using Riverpod.</li>
-                <li>Appointment scheduling with double-booking prevention and role-based access control via Firebase.</li>
-                <li><strong>My role:</strong> Built and integrated both frontend and backend features.</li>
-              </ul>
-
-              <div class="project-tech">
-                <span class="tag">Flutter</span>
-                <span class="tag">Material Design</span>
-                <span class="tag">Riverpod</span>
-                <span class="tag">GetX</span>
-                <span class="tag">Firebase Auth</span>
-                <span class="tag">Cloud Firestore</span>
-                <span class="tag">SharedPreferences</span>
-                <span class="tag">Custom Theming</span>
-              </div>
-
-              <div class="project-media-block">
-                <h4 class="project-media-title">Screenshots</h4>
-                <div class="project-media-grid">
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Login.png" alt="MediCare login screen" />
-                    <figcaption>Login</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Register.png" alt="MediCare registration screen" />
-                    <figcaption>Register</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Admin/DashBoard.png" alt="MediCare admin dashboard" />
-                    <figcaption>Admin dashboard</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Doctor/Dashboard.png" alt="MediCare doctor dashboard" />
-                    <figcaption>Doctor dashboard</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/invetory Manager/dashboard.png" alt="MediCare inventory manager dashboard" />
-                    <figcaption>Inventory dashboard</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/invetory Manager/Add Item.png" alt="MediCare inventory add item screen" />
-                    <figcaption>Add inventory item</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/LabTech/Dashboard.png" alt="MediCare lab technician dashboard" />
-                    <figcaption>Lab dashboard</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/LabTech/New Lab Test.png" alt="MediCare new lab test screen" />
-                    <figcaption>New lab test</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Receptionist/Receptionist dashboard.png" alt="MediCare receptionist dashboard" />
-                    <figcaption>Receptionist dashboard</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Receptionist/Doctor Selection.png" alt="MediCare doctor selection screen" />
-                    <figcaption>Doctor selection</figcaption>
-                  </figure>
-                  <figure>
-                    <img loading="lazy" src="assets/project/MediCare/Receptionist/patient selector.png" alt="MediCare patient selector screen" />
-                    <figcaption>Patient selector</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Weather Info -->
-          <article class="project-block" aria-label="Weather Info">
-            <header class="project-header">
-              <div>
-                <h3>Weather Info</h3>
-                <p class="project-subtitle">Small Flutter app consuming REST APIs for weather data.</p>
-              </div>
-              <div class="project-actions">
-                <a class="btn btn-primary" href="https://github.com/kugelblitz84/Weather-Info" target="_blank" rel="noopener noreferrer">GitHub <i class="fab fa-github"></i></a>
-              </div>
-            </header>
-
-            <div class="project-body">
-              <ul class="project-bullets">
-                <li>Flutter client that fetches and presents weather data from a public REST API in a clean, readable UI.</li>
-                <li><strong>My role:</strong> Frontend integration and UI (no backend service authored for this project).</li>
-              </ul>
-
-              <div class="project-tech">
-                <span class="tag">Flutter</span>
-                <span class="tag">REST APIs</span>
-              </div>
-
-              <div class="project-media-block">
-                <h4 class="project-media-title">Screenshot</h4>
-                <div class="project-media-grid project-media-grid--single">
-                  <figure>
-                    <img loading="lazy" src="assets/project/weather App/Weather-info.png" alt="Weather Info app screenshot" />
-                    <figcaption>Main forecast screen</figcaption>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <a href="https://github.com/kugelblitz84" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">See More <i class="fas fa-arrow-right"></i></a>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact-section container">
-      <div class="division"></div>
-      <div class="content-text">
-        <h2>Let’s Work Together</h2>
-        <p>
-          I’m currently looking for Junior Flutter Developer roles, mobile developer positions, and opportunities to
-          grow as a full-stack or mobile-focused engineer.
-        </p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <h3>Contact</h3>
-          <ul>
-            <li><strong>Email:</strong> <a href="mailto:sadimahmud225@gmail.com">sadimahmud225@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+8801986311047">+8801986311047</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">linkedin.com/in/md-sadi-mahmud-976356313</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">github.com/kugelblitz84</a></li>
-          </ul>
-        </div>
-        <div class="contact-card">
-          <h3>What I Value</h3>
-          <ul>
-            <li>Clean, maintainable code</li>
-            <li>Continuous learning and improvement</li>
-            <li>Real impact through practical software</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    </main>
-
-    <footer id="footer">
+    <!-- Quick Stats -->
+    <section class="stats-section">
       <div class="container">
-        <a href="mailto:sadimahmud225@gmail.com">sadimahmud225@gmail.com</a>
-        <!-- Social links -->
-        <div class="social">
-          
-          <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"
-            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
-          /></a>
-          <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Months Internship</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">ICPC</span>
+            <span class="stat-label">Regional Contestant</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">Full-Stack</span>
+            <span class="stat-label">Development</span>
+          </div>
         </div>
-        <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- Featured Projects Preview -->
+    <section class="featured-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Featured Work</h2>
+          <p>A selection of projects I've built end-to-end</p>
+        </div>
+        <div class="featured-grid">
+          <a href="projects.html#pcist" class="featured-card">
+            <div class="featured-card-image">
+              <div class="featured-placeholder gradient-1">
+                <span>pcIST</span>
+              </div>
+            </div>
+            <div class="featured-card-content">
+              <h3>pcIST Platform</h3>
+              <p>Club management suite with real-time features</p>
+              <div class="featured-tags">
+                <span>Flutter</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </a>
+          <a href="projects.html#dhakaplastic" class="featured-card">
+            <div class="featured-card-image">
+              <div class="featured-placeholder gradient-2">
+                <span>DPM</span>
+              </div>
+            </div>
+            <div class="featured-card-content">
+              <h3>Dhaka Plastic & Metals</h3>
+              <p>Production deployment & development contribution</p>
+              <div class="featured-tags">
+                <span>DevOps</span>
+                <span>CI/CD</span>
+                <span>VPS</span>
+              </div>
+            </div>
+          </a>
+          <a href="projects.html#chatterbox" class="featured-card">
+            <div class="featured-card-image">
+              <div class="featured-placeholder gradient-3">
+                <span>Chat</span>
+              </div>
+            </div>
+            <div class="featured-card-content">
+              <h3>ChatterBox</h3>
+              <p>Real-time messaging with social features</p>
+              <div class="featured-tags">
+                <span>Flutter</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="section-cta">
+          <a href="projects.html" class="btn btn-secondary">View All Projects <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Preview -->
+    <section class="skills-preview">
+      <div class="container">
+        <div class="section-header">
+          <h2>What I Do</h2>
+          <p>Core technologies and areas of expertise</p>
+        </div>
+        <div class="skills-preview-grid">
+          <div class="skill-preview-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Mobile Development</h3>
+            <p>Cross-platform Flutter apps with clean architecture and smooth UX</p>
+          </div>
+          <div class="skill-preview-card">
+            <div class="skill-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend Engineering</h3>
+            <p>Node.js APIs, database design, and server deployment</p>
+          </div>
+          <div class="skill-preview-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3>Problem Solving</h3>
+            <p>Algorithmic thinking from competitive programming experience</p>
+          </div>
+          <div class="skill-preview-card">
+            <div class="skill-icon"><i class="fas fa-rocket"></i></div>
+            <h3>DevOps</h3>
+            <p>CI/CD pipelines, VPS setup, and production deployment</p>
+          </div>
+        </div>
+        <div class="section-cta">
+          <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Let's Build Something Together</h2>
+          <p>I'm currently looking for Junior Flutter Developer roles and opportunities to grow as a mobile-focused engineer.</p>
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="./assets/logo.png" alt="Logo" />
+            <p>Building practical software solutions</p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:sadimahmud225@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+        </div>
       </div>
     </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>

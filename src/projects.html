@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Sadi Mahmud</title>
+    <meta name="description" content="Portfolio projects by Sadi Mahmud - Flutter apps, full-stack applications, and more." />
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1 id="logo">
+          <a href="index.html"><img src="./assets/logo.png" alt="Sadi Mahmud logo" /></a>
+        </h1>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li>
+            <a
+              class="nav-link btn btn-primary"
+              href="assets/Sadi Mahmud_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Resume <i class="fas fa-arrow-right"></i></a>
+          </li>
+          <div class="theme-switch">
+            <input type="checkbox" id="switch" checked />
+            <label class="toggle-icons" for="switch">
+              <img class="moon" src="assets/moon.svg" alt="Dark mode" />
+              <img class="sun" src="assets/sun.svg" alt="Light mode" />
+            </label>
+          </div>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>End-to-end work with full screenshots and demo videos</p>
+      </div>
+    </header>
+
+    <main class="projects-page">
+      <div class="container">
+        
+        <!-- Project Filter -->
+        <div class="project-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="flutter">Flutter</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- pcIST Platform -->
+          <article class="project-card project-card--featured" id="pcist" data-category="flutter fullstack">
+            <div class="project-card-header">
+              <div class="project-badge">Featured</div>
+              <div class="project-links">
+                <a href="https://github.com/kugelblitz84/pcist" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/15Di_1UT_DVfrbNZyh-hxq4hefiqwF03j/view?usp=drive_link" target="_blank" rel="noopener noreferrer" title="Download APK">
+                  <i class="fas fa-download"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2>pcIST Platform</h2>
+              <p class="project-subtitle">Club management suite for membership, events, and contest tracking</p>
+              <ul class="project-highlights">
+                <li>Full-stack platform for digitizing club activities with event and member management</li>
+                <li>JWT/OTP authentication, role-based access control, and Zod validation</li>
+                <li>Real-time admin chat, FCM push notifications, and contest tracking (30+ platforms)</li>
+                <li>Automated PDF generation, email workflows, and task scheduling</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Flutter</span>
+                <span>GetX</span>
+                <span>Socket.IO</span>
+                <span>JWT</span>
+                <span>FCM</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <h3><i class="fas fa-play-circle"></i> Demo Videos</h3>
+              <div class="media-grid media-grid--videos">
+                <figure>
+                  <video controls preload="metadata">
+                    <source src="assets/project/pcIST/Login%20%26%20Dashboards.mp4" type="video/mp4" />
+                  </video>
+                  <figcaption>Login & Dashboards</figcaption>
+                </figure>
+                <figure>
+                  <video controls preload="metadata">
+                    <source src="assets/project/pcIST/Membership%20Managing.mp4" type="video/mp4" />
+                  </video>
+                  <figcaption>Membership Management</figcaption>
+                </figure>
+                <figure>
+                  <video controls preload="metadata">
+                    <source src="assets/project/pcIST/Events%20&%20Contest%20Tracking.mp4" type="video/mp4" />
+                  </video>
+                  <figcaption>Events & Contest Tracking</figcaption>
+                </figure>
+                <figure>
+                  <video controls preload="metadata">
+                    <source src="assets/project/pcIST/Document%20creation.mp4" type="video/mp4" />
+                  </video>
+                  <figcaption>Document Creation</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <!-- Dhaka Plastic & Metals -->
+          <article class="project-card project-card--featured" id="dhakaplastic" data-category="fullstack web">
+            <div class="project-card-header">
+              <div class="project-badge">Live Production</div>
+              <div class="project-links">
+                <a href="https://dpmsign.com" target="_blank" rel="noopener noreferrer" title="Live Site">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2>Dhaka Plastic & Metals</h2>
+              <p class="project-subtitle">Development & Production Contribution — E-commerce Platform</p>
+              <div class="project-role-note">
+                <i class="fas fa-info-circle"></i>
+                <span>Took ownership of deployment infrastructure and contributed to feature development. Inherited the project as a zip folder and built the entire production pipeline from scratch.</span>
+              </div>
+              <ul class="project-highlights">
+                <li><strong>Full deployment ownership:</strong> Set up GitHub repository, established CI/CD pipeline with GitHub Actions and SSH automation for seamless deployments</li>
+                <li><strong>VPS infrastructure:</strong> Configured Linux server with Nginx reverse proxy, SSL certificates, and PM2 process management</li>
+                <li><strong>Development contribution:</strong> Delivered 30+ features including staff analytics dashboards, performance charts, and payment installment system</li>
+                <li><strong>SEO & optimization:</strong> Implemented meta tags, Open Graph, URL canonicalization, and mobile optimization</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express</span>
+                <span>GitHub Actions</span>
+                <span>CI/CD</span>
+                <span>Nginx</span>
+                <span>PM2</span>
+                <span>SSL</span>
+                <span>VPS</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <div class="media-placeholder">
+                <i class="fas fa-server"></i>
+                <p>Live at <a href="https://dpmsign.com" target="_blank" rel="noopener noreferrer">dpmsign.com</a> — deployed and maintained by me</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- ChatterBox -->
+          <article class="project-card" id="chatterbox" data-category="flutter">
+            <div class="project-card-header">
+              <div class="project-links">
+                <a href="https://github.com/kugelblitz84/ChatterBox" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2>ChatterBox</h2>
+              <p class="project-subtitle">Real-time messaging app with social graph features</p>
+              <ul class="project-highlights">
+                <li>Peer-to-peer messaging with private chatrooms and real-time presence tracking</li>
+                <li>Firebase Authentication and Firestore for persistent data</li>
+                <li>Social graph features with friend requests and notifications</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Flutter</span>
+                <span>GetX</span>
+                <span>Firebase Auth</span>
+                <span>Cloud Firestore</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <h3><i class="fas fa-images"></i> Screenshots</h3>
+              <div class="media-grid">
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/login.png" alt="Login screen" />
+                  <figcaption>Login</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/signup.png" alt="Signup screen" />
+                  <figcaption>Sign Up</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/chats.png" alt="Chat list" />
+                  <figcaption>Chat List</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/nonemptychat.png" alt="Active conversation" />
+                  <figcaption>Conversation</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/drawer.png" alt="Navigation drawer" />
+                  <figcaption>Navigation</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/ChatterBox/pending.png" alt="Pending requests" />
+                  <figcaption>Requests</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <!-- MediCare -->
+          <article class="project-card" id="medicare" data-category="flutter">
+            <div class="project-card-header">
+              <div class="project-links">
+                <a href="https://github.com/kugelblitz84/hospital-manager-uni" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2>MediCare</h2>
+              <p class="project-subtitle">Hospital management system with multi-role dashboards</p>
+              <ul class="project-highlights">
+                <li>Multi-role app with state management using Riverpod</li>
+                <li>Appointment scheduling with double-booking prevention</li>
+                <li>Role-based access control via Firebase</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Flutter</span>
+                <span>Riverpod</span>
+                <span>GetX</span>
+                <span>Firebase Auth</span>
+                <span>Cloud Firestore</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <h3><i class="fas fa-images"></i> Screenshots</h3>
+              <div class="media-grid">
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/Login.png" alt="Login screen" />
+                  <figcaption>Login</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/Register.png" alt="Register screen" />
+                  <figcaption>Register</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/Admin/DashBoard.png" alt="Admin dashboard" />
+                  <figcaption>Admin Dashboard</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/Doctor/Dashboard.png" alt="Doctor dashboard" />
+                  <figcaption>Doctor Dashboard</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/invetory Manager/dashboard.png" alt="Inventory dashboard" />
+                  <figcaption>Inventory</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/LabTech/Dashboard.png" alt="Lab dashboard" />
+                  <figcaption>Lab Dashboard</figcaption>
+                </figure>
+                <figure>
+                  <img loading="lazy" src="assets/project/MediCare/Receptionist/Receptionist dashboard.png" alt="Receptionist dashboard" />
+                  <figcaption>Receptionist</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+          <!-- Weather Info -->
+          <article class="project-card project-card--small" id="weather" data-category="flutter">
+            <div class="project-card-header">
+              <div class="project-links">
+                <a href="https://github.com/kugelblitz84/Weather-Info" target="_blank" rel="noopener noreferrer" title="View on GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-card-body">
+              <h2>Weather Info</h2>
+              <p class="project-subtitle">Flutter app consuming REST APIs for weather data</p>
+              <ul class="project-highlights">
+                <li>Fetches and presents weather data from public REST API</li>
+                <li>Clean, readable UI for weather information</li>
+              </ul>
+              <div class="project-tech-stack">
+                <span>Flutter</span>
+                <span>REST APIs</span>
+              </div>
+            </div>
+            <div class="project-media">
+              <h3><i class="fas fa-image"></i> Screenshot</h3>
+              <div class="media-grid media-grid--single">
+                <figure>
+                  <img loading="lazy" src="assets/project/weather App/Weather-info.png" alt="Weather app" />
+                  <figcaption>Main Screen</figcaption>
+                </figure>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- More Projects CTA -->
+        <div class="more-projects">
+          <p>Want to see more?</p>
+          <a href="https://github.com/kugelblitz84" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> View GitHub Profile
+          </a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <img src="./assets/logo.png" alt="Logo" />
+            <p>Building practical software solutions</p>
+          </div>
+          <div class="footer-links">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:sadimahmud225@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+      // Project filter functionality
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          
+          const filter = btn.dataset.filter;
+          document.querySelectorAll('.project-card').forEach(card => {
+            if (filter === 'all' || card.dataset.category.includes(filter)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
