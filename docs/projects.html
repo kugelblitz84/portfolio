@@ -4,399 +4,209 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Sadi Mahmud</title>
-    <meta name="description" content="Portfolio projects by Sadi Mahmud - Flutter apps, full-stack applications, and more." />
-
-    <!-- Favicons -->
+    <meta name="theme-color" content="#ffcd42" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" href="assets/profile-image.jpg" as="image" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Projects | Sadi Mahmud</title>
+    <meta name="description" content="Project case studies by Sadi Mahmud covering Flutter, GetX, Firebase, backend APIs, AI voice infrastructure, LiveKit, WebRTC, client work, and full-stack development." />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <h1 id="logo">
-          <a href="index.html"><img src="./assets/logo.png" alt="Sadi Mahmud logo" /></a>
-        </h1>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Sadi Mahmud home">
+          <img src="assets/logo.png" alt="Sadi Mahmud logo" width="44" height="44" />
+          <span>Sadi Mahmud</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <ul class="nav-menu">
           <li><a class="nav-link" href="index.html">Home</a></li>
           <li><a class="nav-link active" href="projects.html">Projects</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li>
-            <a
-              class="nav-link btn btn-primary"
-              href="assets/Sadi Mahmud_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Resume <i class="fas fa-arrow-right"></i></a>
-          </li>
-          <div class="theme-switch">
-            <input type="checkbox" id="switch" checked />
-            <label class="toggle-icons" for="switch">
-              <img class="moon" src="assets/moon.svg" alt="Dark mode" />
-              <img class="sun" src="assets/sun.svg" alt="Light mode" />
-            </label>
-          </div>
+          <li><a class="nav-link resume-link" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li class="theme-item"><button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </div>
     </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-      <div class="container">
-        <h1>Projects</h1>
-        <p>End-to-end work with full screenshots and demo videos</p>
-      </div>
-    </header>
-
-    <main class="projects-page">
-      <div class="container">
-        
-        <!-- Project Filter -->
-        <div class="project-filter">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="flutter">Flutter</button>
-          <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
-          <button class="filter-btn" data-filter="web">Web</button>
+    <main>
+      <header class="page-hero section-pad">
+        <div class="container narrow">
+          <p class="eyebrow">Case studies</p>
+          <h1>Project work with role, contribution, and skill context.</h1>
+          <p>My portfolio is organized around what I personally contributed: Flutter implementation, API integration, client requirement analysis, backend collaboration, AI/realtime research, and deployment problem solving.</p>
         </div>
+      </header>
 
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-          
-          <!-- pcIST Platform -->
-          <article class="project-card project-card--featured" id="pcist" data-category="flutter fullstack">
-            <div class="project-card-header">
-              <div class="project-badge">Featured</div>
-              <div class="project-links">
-                <a href="https://github.com/kugelblitz84/pcist" target="_blank" rel="noopener noreferrer" title="View on GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://drive.google.com/file/d/15Di_1UT_DVfrbNZyh-hxq4hefiqwF03j/view?usp=drive_link" target="_blank" rel="noopener noreferrer" title="Download APK">
-                  <i class="fas fa-download"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <h2>pcIST Platform</h2>
-              <p class="project-subtitle">Club management suite for membership, events, and contest tracking</p>
-              <ul class="project-highlights">
-                <li>Full-stack platform for digitizing club activities with event and member management</li>
-                <li>JWT/OTP authentication, role-based access control, and Zod validation</li>
-                <li>Real-time admin chat, FCM push notifications, and contest tracking (30+ platforms)</li>
-                <li>Automated PDF generation, email workflows, and task scheduling</li>
-              </ul>
-              <div class="project-tech-stack">
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>MongoDB</span>
-                <span>Flutter</span>
-                <span>GetX</span>
-                <span>Socket.IO</span>
-                <span>JWT</span>
-                <span>FCM</span>
-              </div>
-            </div>
-            <div class="project-media">
-              <h3><i class="fas fa-play-circle"></i> Demo Videos</h3>
-              <div class="media-grid media-grid--videos">
-                <figure>
-                  <video controls preload="metadata">
-                    <source src="assets/project/pcIST/Login%20%26%20Dashboards.mp4" type="video/mp4" />
-                  </video>
-                  <figcaption>Login & Dashboards</figcaption>
-                </figure>
-                <figure>
-                  <video controls preload="metadata">
-                    <source src="assets/project/pcIST/Membership%20Managing.mp4" type="video/mp4" />
-                  </video>
-                  <figcaption>Membership Management</figcaption>
-                </figure>
-                <figure>
-                  <video controls preload="metadata">
-                    <source src="assets/project/pcIST/Events%20&%20Contest%20Tracking.mp4" type="video/mp4" />
-                  </video>
-                  <figcaption>Events & Contest Tracking</figcaption>
-                </figure>
-                <figure>
-                  <video controls preload="metadata">
-                    <source src="assets/project/pcIST/Document%20creation.mp4" type="video/mp4" />
-                  </video>
-                  <figcaption>Document Creation</figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
+      <section class="project-toolbar container" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="client">Client work</button>
+        <button class="filter-btn" data-filter="flutter">Flutter</button>
+        <button class="filter-btn" data-filter="backend">Backend/API</button>
+        <button class="filter-btn" data-filter="ai">AI/Realtime</button>
+        <button class="filter-btn" data-filter="fullstack">Full-stack</button>
+      </section>
 
-          <!-- Dhaka Plastic & Metals -->
-          <article class="project-card project-card--featured" id="dhakaplastic" data-category="fullstack web">
-            <div class="project-card-header">
-              <div class="project-badge">Live Production</div>
-              <div class="project-links">
-                <a href="https://dpmsign.com" target="_blank" rel="noopener noreferrer" title="Live Site">
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <h2>Dhaka Plastic & Metals</h2>
-              <p class="project-subtitle">Development & Production Contribution — E-commerce Platform</p>
-              <div class="project-role-note">
-                <i class="fas fa-info-circle"></i>
-                <span>Took ownership of deployment infrastructure and contributed to feature development. Inherited the project as a zip folder and built the entire production pipeline from scratch.</span>
-              </div>
-              <ul class="project-highlights">
-                <li><strong>Full deployment ownership:</strong> Set up GitHub repository, established CI/CD pipeline with GitHub Actions and SSH automation for seamless deployments</li>
-                <li><strong>VPS infrastructure:</strong> Configured Linux server with Nginx reverse proxy, SSL certificates, and PM2 process management</li>
-                <li><strong>Development contribution:</strong> Delivered 30+ features including staff analytics dashboards, performance charts, and payment installment system</li>
-                <li><strong>SEO & optimization:</strong> Implemented meta tags, Open Graph, URL canonicalization, and mobile optimization</li>
-              </ul>
-              <div class="project-tech-stack">
-                <span>TypeScript</span>
-                <span>React</span>
-                <span>Node.js</span>
-                <span>Express</span>
-                <span>GitHub Actions</span>
-                <span>CI/CD</span>
-                <span>Nginx</span>
-                <span>PM2</span>
-                <span>SSL</span>
-                <span>VPS</span>
-              </div>
-            </div>
-            <div class="project-media">
-              <div class="media-placeholder">
-                <i class="fas fa-server"></i>
-                <p>Live at <a href="https://dpmsign.com" target="_blank" rel="noopener noreferrer">dpmsign.com</a> — deployed and maintained by me</p>
-              </div>
-            </div>
-          </article>
+      <section class="projects-list container" aria-label="Projects">
+        <article id="ai-language-tutor" class="project-card case-study" data-tags="client flutter backend ai realtime deployment">
+          <div class="project-meta"><span class="badge">Professional / Client</span><span>AI · Realtime · Deployment</span></div>
+          <h2>AI Language Tutor / Voice AI Platform</h2>
+          <p class="project-lead">Realtime AI voice tutor where I migrated a costly prototype into a lower-cost, deployable Pipecat + LiveKit architecture and implemented the Flutter UI from Figma.</p>
+          <div class="case-grid">
+            <div><h3>Context</h3><p>The prototype used GPT Realtime API, which was not compatible with the cost margin at roughly $40 per 1,000 minutes. The project needed a cheaper architecture while keeping realtime voice interaction feasible.</p></div>
+            <div><h3>My role</h3><p>Researched alternatives, migrated the architecture, solved WebRTC deployment limitations, stabilized async backend operations, deployed on Railway, and implemented the Flutter frontend after prototype validation.</p></div>
+          </div>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Migrated the voice architecture from GPT Realtime API to a Pipecat + LiveKit based solution.</li>
+            <li>Reduced estimated realtime voice cost from about $40 to $14 per 1,000 minutes by limiting paid usage mainly to STT/TTS services.</li>
+            <li>Implemented FastAPI session orchestration with LiveKit token generation, session start/end flow, and bot worker lifecycle handling.</li>
+            <li>Solved LAN-only WebRTC/STUN deployment limitations by moving to LiveKit-supported realtime transport.</li>
+            <li>Split unstable async service flow into separate session/token and bot-worker services to improve Railway deployment stability.</li>
+            <li>Connected the Flutter app flow with realtime session handling and implemented UI from Figma.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>FastAPI</span><span>Pipecat</span><span>LiveKit</span><span>WebRTC</span><span>Railway</span><span>GitHub CI/CD</span><span>STT/TTS</span><span>Async debugging</span></div>
+          <p class="privacy-note">Private client/internal project — implementation details are summarized without exposing confidential code or credentials.</p>
+        </article>
 
-          <!-- ChatterBox -->
-          <article class="project-card" id="chatterbox" data-category="flutter">
-            <div class="project-card-header">
-              <div class="project-links">
-                <a href="https://github.com/kugelblitz84/ChatterBox" target="_blank" rel="noopener noreferrer" title="View on GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <h2>ChatterBox</h2>
-              <p class="project-subtitle">Real-time messaging app with social graph features</p>
-              <ul class="project-highlights">
-                <li>Peer-to-peer messaging with private chatrooms and real-time presence tracking</li>
-                <li>Firebase Authentication and Firestore for persistent data</li>
-                <li>Social graph features with friend requests and notifications</li>
-              </ul>
-              <div class="project-tech-stack">
-                <span>Flutter</span>
-                <span>GetX</span>
-                <span>Firebase Auth</span>
-                <span>Cloud Firestore</span>
-              </div>
-            </div>
-            <div class="project-media">
-              <h3><i class="fas fa-images"></i> Screenshots</h3>
-              <div class="media-grid">
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/login.png" alt="Login screen" />
-                  <figcaption>Login</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/signup.png" alt="Signup screen" />
-                  <figcaption>Sign Up</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/chats.png" alt="Chat list" />
-                  <figcaption>Chat List</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/nonemptychat.png" alt="Active conversation" />
-                  <figcaption>Conversation</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/drawer.png" alt="Navigation drawer" />
-                  <figcaption>Navigation</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/ChatterBox/pending.png" alt="Pending requests" />
-                  <figcaption>Requests</figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
+        <article id="marineledger" class="project-card case-study" data-tags="client flutter business">
+          <div class="project-meta"><span class="badge">Professional / Client</span><span>Full ownership · Business logic</span></div>
+          <h2>MarineLedger — Shipping Ledger & Accounts App</h2>
+          <p class="project-lead">A private ledger and accounts calculator app for a shipping company, built with full ownership from requirement analysis to delivery support.</p>
+          <div class="case-grid">
+            <div><h3>Context</h3><p>The client needed a private tool for shipping ledger management, account calculation, operational records, and practical daily usage. The budget did not include a dedicated backend.</p></div>
+            <div><h3>My role</h3><p>Acted as the representative developer from ShafaCode, communicated with the client, understood their business model, suggested features and usage flows, designed the UI/UX, and built the Flutter app.</p></div>
+          </div>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Communicated directly with the client to understand shipping workflows, accounting model, and operational constraints.</li>
+            <li>Designed and implemented the Flutter UI/UX and core app flow from scratch.</li>
+            <li>Built ledger/accounting flows, operational records, transaction/calculation logic, and business-specific data handling.</li>
+            <li>Implemented local-first functionality and safeguards appropriate for a private isolated business environment.</li>
+            <li>Provided consultation on feature usage and practical improvements based on the client’s working process.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Local storage</span><span>Business logic</span><span>UI/UX planning</span><span>Client communication</span><span>Requirement analysis</span></div>
+          <p class="privacy-note">Private client project — public demo/source is not shared.</p>
+        </article>
 
-          <!-- MediCare -->
-          <article class="project-card" id="medicare" data-category="flutter">
-            <div class="project-card-header">
-              <div class="project-links">
-                <a href="https://github.com/kugelblitz84/hospital-manager-uni" target="_blank" rel="noopener noreferrer" title="View on GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <h2>MediCare</h2>
-              <p class="project-subtitle">Hospital management system with multi-role dashboards</p>
-              <ul class="project-highlights">
-                <li>Multi-role app with state management using Riverpod</li>
-                <li>Appointment scheduling with double-booking prevention</li>
-                <li>Role-based access control via Firebase</li>
-              </ul>
-              <div class="project-tech-stack">
-                <span>Flutter</span>
-                <span>Riverpod</span>
-                <span>GetX</span>
-                <span>Firebase Auth</span>
-                <span>Cloud Firestore</span>
-              </div>
-            </div>
-            <div class="project-media">
-              <h3><i class="fas fa-images"></i> Screenshots</h3>
-              <div class="media-grid">
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/Login.png" alt="Login screen" />
-                  <figcaption>Login</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/Register.png" alt="Register screen" />
-                  <figcaption>Register</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/Admin/DashBoard.png" alt="Admin dashboard" />
-                  <figcaption>Admin Dashboard</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/Doctor/Dashboard.png" alt="Doctor dashboard" />
-                  <figcaption>Doctor Dashboard</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/invetory Manager/dashboard.png" alt="Inventory dashboard" />
-                  <figcaption>Inventory</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/LabTech/Dashboard.png" alt="Lab dashboard" />
-                  <figcaption>Lab Dashboard</figcaption>
-                </figure>
-                <figure>
-                  <img loading="lazy" src="assets/project/MediCare/Receptionist/Receptionist dashboard.png" alt="Receptionist dashboard" />
-                  <figcaption>Receptionist</figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
+        <article id="sports-score-platform" class="project-card case-study" data-tags="client flutter backend api">
+          <div class="project-meta"><span class="badge">Professional / Client</span><span>Research · API strategy · Flutter UI</span></div>
+          <h2>Live Sports Score Platform</h2>
+          <p class="project-lead">A FotMob-style football score platform where I researched affordable data providers, mapped API features, coordinated with backend developers, and implemented the Flutter UI.</p>
+          <div class="case-grid">
+            <div><h3>Context</h3><p>Enterprise providers like Opta/StatsPerform were too costly for the client. The project needed a cheaper sports data provider while still supporting fixtures, live scores, standings, teams, players, and match details.</p></div>
+            <div><h3>My role</h3><p>Researched available providers, selected API-Football based on cost and feature coverage, documented endpoint mapping, identified composite features, and worked with the backend team on implementation planning.</p></div>
+          </div>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Selected API-Football as a budget-fit alternative after researching sports data provider options.</li>
+            <li>Documented endpoint mapping for fixtures, live scores, standings, teams, players, coaches, match details, and related flows.</li>
+            <li>Identified composite features requiring multiple API responses and explained backend-side aggregation strategy.</li>
+            <li>Worked directly with backend developers to plan API usage, limitations, response structure, and feature feasibility.</li>
+            <li>Implemented the Flutter frontend UI for a FotMob-style sports experience.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>API-Football</span><span>REST API research</span><span>Feature mapping</span><span>Backend collaboration</span><span>Technical documentation</span></div>
+          <p class="privacy-note">Private client/internal project — described as a case study.</p>
+        </article>
 
-          <!-- Weather Info -->
-          <article class="project-card project-card--small" id="weather" data-category="flutter">
-            <div class="project-card-header">
-              <div class="project-links">
-                <a href="https://github.com/kugelblitz84/Weather-Info" target="_blank" rel="noopener noreferrer" title="View on GitHub">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-            </div>
-            <div class="project-card-body">
-              <h2>Weather Info</h2>
-              <p class="project-subtitle">Flutter app consuming REST APIs for weather data</p>
-              <ul class="project-highlights">
-                <li>Fetches and presents weather data from public REST API</li>
-                <li>Clean, readable UI for weather information</li>
-              </ul>
-              <div class="project-tech-stack">
-                <span>Flutter</span>
-                <span>REST APIs</span>
-              </div>
-            </div>
-            <div class="project-media">
-              <h3><i class="fas fa-image"></i> Screenshot</h3>
-              <div class="media-grid media-grid--single">
-                <figure>
-                  <img loading="lazy" src="assets/project/weather App/Weather-info.png" alt="Weather app" />
-                  <figcaption>Main Screen</figcaption>
-                </figure>
-              </div>
-            </div>
-          </article>
+        <article id="landguru" class="project-card case-study" data-tags="client flutter backend api firebase">
+          <div class="project-meta"><span class="badge">Professional / Client</span><span>Flutter UI · API integration</span></div>
+          <h2>LandGuru — Real Estate Platform</h2>
+          <p class="project-lead">One of my first internship projects, focused on converting Figma designs into Flutter UI and completing major API integration work.</p>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Fully implemented the Flutter UI using Figma design references.</li>
+            <li>Completed approximately 80% of the API integration across the application.</li>
+            <li>Worked with authentication, user/agent modules, property flows, shared services, file/image handling, and token-based API communication.</li>
+            <li>Contributed to a larger production-style Flutter codebase using GetX, Dio, Firebase, and modular feature structure.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Dio</span><span>REST APIs</span><span>Firebase</span><span>Figma implementation</span><span>Token-based auth</span><span>File upload</span></div>
+          <p class="privacy-note">Private client/internal project — public source is not shared.</p>
+        </article>
 
-        </div>
+        <article id="focus" class="project-card case-study" data-tags="client flutter native firebase">
+          <div class="project-meta"><span class="badge">Professional / Client</span><span>Native Android · Platform channels</span></div>
+          <h2>Focus — Flutter App with Native Features</h2>
+          <p class="project-lead">A Flutter project requiring native device-level functionality beyond standard UI development.</p>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Worked on selected modules from the partial codebase involving native Android integrations.</li>
+            <li>Implemented Flutter features that communicate with native Android functionality through platform channels.</li>
+            <li>Handled permission-heavy flows and native device capability integration.</li>
+            <li>Contributed to background/native behavior and app flows involving Firebase and local notifications.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>Platform channels</span><span>Android native</span><span>Firebase</span><span>Permissions</span><span>Background behavior</span></div>
+        </article>
 
-        <!-- More Projects CTA -->
-        <div class="more-projects">
-          <p>Want to see more?</p>
-          <a href="https://github.com/kugelblitz84" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github"></i> View GitHub Profile
-          </a>
-        </div>
+        <article id="pcist-platform" class="project-card case-study" data-tags="flutter backend fullstack realtime firebase">
+          <div class="project-meta"><span class="badge">Full-stack / Personal</span><span>Flutter · Node.js · Realtime</span></div>
+          <h2>pcIST Platform — Club Management Suite</h2>
+          <p class="project-lead">A full-stack platform for digitalizing club operations, member management, event workflows, realtime communication, and competitive programming contest tracking.</p>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Built event/member management, event gallery, admin chat, FCM push notifications, and contest tracking for 30+ competitive programming platforms.</li>
+            <li>Implemented JWT/OTP authentication, role-based access control, Zod request validation, automated PDF generation, email workflows, and scheduled background tasks.</li>
+            <li>Designed the mobile app with Flutter/GetX and built backend APIs with Express 5, MongoDB, Mongoose, Socket.IO, Cloudinary, Puppeteer, Nodemailer, and Agenda.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Node.js</span><span>Express 5</span><span>MongoDB</span><span>Socket.IO</span><span>FCM</span><span>Cloudinary</span><span>JWT/OTP</span><span>Zod</span><span>Puppeteer</span></div>
+          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/pcist" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn btn-small btn-ghost" href="https://drive.google.com/file/d/15Di_1UT_DVfrbNZyh-hxq4hefiqwF03j/view?usp=drive_link" target="_blank" rel="noopener noreferrer">APK</a></div>
+        </article>
 
-      </div>
+        <article id="dpm" class="project-card case-study" data-tags="fullstack backend deployment">
+          <div class="project-meta"><span class="badge">Production contribution</span><span>Web · API · DevOps</span></div>
+          <h2>Dhaka Plastic & Metals — E-commerce Production System</h2>
+          <p class="project-lead">A production e-commerce platform with customer site, admin panel, backend API, analytics, deployment automation, and SEO improvements.</p>
+          <h3>Key contributions</h3>
+          <ul class="contribution-list">
+            <li>Contributed to development and production deployment across customer site, admin panel, and API.</li>
+            <li>Established CI/CD using GitHub Actions and SSH automation for VPS deployment.</li>
+            <li>Delivered 30+ features including staff analytics, performance charts, and payment installment system.</li>
+            <li>Applied SEO improvements such as meta tags, Open Graph, URL canonicalization through Nginx, and mobile optimization.</li>
+          </ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>TypeScript</span><span>React</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>GitHub Actions</span><span>Nginx</span><span>VPS</span><span>cPanel</span><span>SSL</span><span>SEO</span></div>
+          <div class="project-actions"><a class="btn btn-small" href="https://dpmsign.com" target="_blank" rel="noopener noreferrer">Live site</a></div>
+        </article>
+
+        <article id="chatterbox" class="project-card case-study" data-tags="flutter firebase realtime">
+          <div class="project-meta"><span class="badge">Earlier Flutter project</span><span>Messaging · Firebase</span></div>
+          <h2>ChatterBox — Real-time Messaging App</h2>
+          <p class="project-lead">A peer-to-peer messaging app with social graph features, private chatrooms, and realtime presence tracking.</p>
+          <ul class="contribution-list"><li>Implemented Firebase Authentication, Cloud Firestore persistence, private messaging flows, and social-network style user interactions.</li></ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Firebase Authentication</span><span>Cloud Firestore</span><span>FlutterFire CLI</span><span>Realtime data</span></div>
+          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/ChatterBox" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+        </article>
+
+        <article id="medicare" class="project-card case-study" data-tags="flutter firebase">
+          <div class="project-meta"><span class="badge">Earlier Flutter project</span><span>Healthcare workflow</span></div>
+          <h2>MediCare — Hospital Management System</h2>
+          <p class="project-lead">A multi-role hospital management app with appointment scheduling, double-booking prevention, and role-based Firebase access.</p>
+          <ul class="contribution-list"><li>Implemented business logic, custom theming, state management, role-specific flows, appointment scheduling, and Firebase-backed access control.</li></ul>
+          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>Riverpod</span><span>GetX</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>SharedPreferences</span><span>Material Design</span></div>
+          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/hospital-manager-uni" target="_blank" rel="noopener noreferrer">GitHub</a></div>
+        </article>
+      </section>
     </main>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <img src="./assets/logo.png" alt="Logo" />
-            <p>Building practical software solutions</p>
-          </div>
-          <div class="footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h4>Connect</h4>
-            <div class="social-icons">
-              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:sadimahmud225@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+      <div class="container footer-grid">
+        <div>
+          <h2>Sadi Mahmud</h2>
+          <p>Flutter Developer focused on production mobile apps, backend/API collaboration, AI/realtime integrations, and clean engineering practices.</p>
         </div>
-        <div class="footer-bottom">
-          <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:sadimahmud225@gmail.com">Email</a>
+          <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
+      <div class="container footer-bottom">© <span id="year"></span> Sadi Mahmud. Built with static HTML, CSS, and JavaScript.</div>
     </footer>
-
-    <script src="js/script.js"></script>
-    <script>
-      // Project filter functionality
-      document.querySelectorAll('.filter-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          
-          const filter = btn.dataset.filter;
-          document.querySelectorAll('.project-card').forEach(card => {
-            if (filter === 'all' || card.dataset.category.includes(filter)) {
-              card.style.display = 'block';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-        });
-      });
-    </script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

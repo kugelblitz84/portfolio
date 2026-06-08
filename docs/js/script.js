@@ -1,116 +1,55 @@
-// Mobile menu functionality
-const hamburger = document.querySelector(".hamburger");
+const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".nav-menu");
 
-if (hamburger && navMenu) {
-  hamburger.addEventListener("click", mobileMenu);
-}
+if (navToggle && navMenu) {
+  navToggle.addEventListener("click", () => {
+    const isOpen = navMenu.classList.toggle("active");
+    document.body.classList.toggle("nav-open", isOpen);
+    navToggle.setAttribute("aria-expanded", String(isOpen));
+  });
 
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
-
-// Close navbar when link is clicked
-const navLink = document.querySelectorAll(".nav-link");
-navLink.forEach((n) => n.addEventListener("click", closeMenu));
-
-function closeMenu() {
-  hamburger.classList.remove("active");
-  navMenu.classList.remove("active");
-}
-
-// Theme toggle functionality
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
-
-function switchTheme(e) {
-  if (e.target.checked) {
-    document.documentElement.setAttribute("data-theme", "dark");
-    localStorage.setItem("theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-    localStorage.setItem("theme", "light");
-  }
-}
-
-if (toggleSwitch) {
-  toggleSwitch.addEventListener("change", switchTheme, false);
-
-  // Load saved theme preference
-  const currentTheme = localStorage.getItem("theme");
-  if (currentTheme === "dark" || currentTheme === "light") {
-    document.documentElement.setAttribute("data-theme", currentTheme);
-    toggleSwitch.checked = currentTheme === "dark";
-  } else {
-    document.documentElement.setAttribute("data-theme", "dark");
-    toggleSwitch.checked = true;
-  }
-}
-
-// Set current year in footer
-const myDate = document.querySelector("#datee");
-if (myDate) {
-  myDate.innerHTML = new Date().getFullYear();
-}
-
-// Lazy load images - add loaded class when image loads
-document.querySelectorAll('img[loading="lazy"]').forEach((img) => {
-  if (img.complete) {
-    img.classList.add("loaded");
-  } else {
-    img.addEventListener("load", () => {
-      img.classList.add("loaded");
+  navMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navMenu.classList.remove("active");
+      document.body.classList.remove("nav-open");
+      navToggle.setAttribute("aria-expanded", "false");
     });
-  }
-});
-
-// Smooth scroll for anchor links
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    const targetId = this.getAttribute("href");
-    if (targetId !== "#") {
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        targetElement.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-        });
-      }
-    }
-  });
-});
-
-// Scroll-based navbar background
-const navbar = document.querySelector(".navbar");
-if (navbar) {
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 50) {
-      navbar.classList.add("scrolled");
-    } else {
-      navbar.classList.remove("scrolled");
-    }
   });
 }
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.1,
-};
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
+const themeToggle = document.querySelector(".theme-toggle");
+const savedTheme = localStorage.getItem("theme");
+const prefersLight = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+const initialTheme = savedTheme || (prefersLight ? "light" : "dark");
+document.documentElement.setAttribute("data-theme", initialTheme);
+if (themeToggle) themeToggle.textContent = initialTheme === "dark" ? "🌙" : "☀️";
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const current = document.documentElement.getAttribute("data-theme") || "dark";
+    const next = current === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    themeToggle.textContent = next === "dark" ? "🌙" : "☀️";
   });
-}, observerOptions);
+}
 
-// Observe elements for animation
-document.querySelectorAll(".project-card, .skill-card, .achievement-card, .value-card, .featured-card, .contact-method").forEach((el) => {
-  el.classList.add("animate-on-scroll");
-  observer.observe(el);
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card[data-tags]");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const filter = button.dataset.filter;
+    filterButtons.forEach((btn) => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    projectCards.forEach((card) => {
+      const tags = (card.dataset.tags || "").split(" ");
+      const shouldShow = filter === "all" || tags.includes(filter);
+      card.classList.toggle("is-hidden", !shouldShow);
+    });
+  });
 });

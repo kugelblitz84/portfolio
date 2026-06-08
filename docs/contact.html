@@ -4,226 +4,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | Sadi Mahmud</title>
-    <meta name="description" content="Get in touch with Sadi Mahmud for Flutter development, full-stack projects, or collaboration opportunities." />
-
-    <!-- Favicons -->
+    <meta name="theme-color" content="#ffcd42" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" href="assets/profile-image.jpg" as="image" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Contact | Sadi Mahmud</title>
+    <meta name="description" content="Contact Sadi Mahmud for Flutter, mobile app development, full-stack mobile, Firebase, backend/API, or AI/realtime integration opportunities." />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <h1 id="logo">
-          <a href="index.html"><img src="./assets/logo.png" alt="Sadi Mahmud logo" /></a>
-        </h1>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Sadi Mahmud home">
+          <img src="assets/logo.png" alt="Sadi Mahmud logo" width="44" height="44" />
+          <span>Sadi Mahmud</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <ul class="nav-menu">
           <li><a class="nav-link" href="index.html">Home</a></li>
           <li><a class="nav-link" href="projects.html">Projects</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
           <li><a class="nav-link active" href="contact.html">Contact</a></li>
-          <li>
-            <a
-              class="nav-link btn btn-primary"
-              href="assets/Sadi Mahmud_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Resume <i class="fas fa-arrow-right"></i></a>
-          </li>
-          <div class="theme-switch">
-            <input type="checkbox" id="switch" checked />
-            <label class="toggle-icons" for="switch">
-              <img class="moon" src="assets/moon.svg" alt="Dark mode" />
-              <img class="sun" src="assets/sun.svg" alt="Light mode" />
-            </label>
-          </div>
+          <li><a class="nav-link resume-link" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li class="theme-item"><button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </div>
     </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-      <div class="container">
-        <h1>Get In Touch</h1>
-        <p>I'd love to hear from you. Let's connect!</p>
-      </div>
-    </header>
-
-    <main class="contact-page">
-      <div class="container">
-
-        <div class="contact-layout">
-          
-          <!-- Contact Info -->
-          <div class="contact-info">
-            <h2>Let's Work Together</h2>
-            <p>
-              I'm currently looking for Junior Flutter Developer roles, mobile developer positions, 
-              and opportunities to grow as a full-stack or mobile-focused engineer.
-            </p>
-            <p>
-              Whether you have a project in mind, a question, or just want to say hello, 
-              feel free to reach out through any of the channels below.
-            </p>
-
-            <div class="contact-methods">
-              <a href="mailto:sadimahmud225@gmail.com" class="contact-method">
-                <div class="contact-method-icon">
-                  <i class="fas fa-envelope"></i>
-                </div>
-                <div class="contact-method-info">
-                  <h3>Email</h3>
-                  <p>sadimahmud225@gmail.com</p>
-                </div>
-              </a>
-
-              <a href="tel:+8801986311047" class="contact-method">
-                <div class="contact-method-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-method-info">
-                  <h3>Phone</h3>
-                  <p>+8801986311047</p>
-                </div>
-              </a>
-
-              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer" class="contact-method">
-                <div class="contact-method-icon">
-                  <i class="fab fa-linkedin"></i>
-                </div>
-                <div class="contact-method-info">
-                  <h3>LinkedIn</h3>
-                  <p>Connect with me</p>
-                </div>
-              </a>
-
-              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer" class="contact-method">
-                <div class="contact-method-icon">
-                  <i class="fab fa-github"></i>
-                </div>
-                <div class="contact-method-info">
-                  <h3>GitHub</h3>
-                  <p>View my code</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- Contact Form -->
-          <!-- 
-            TO RECEIVE MESSAGES: 
-            1. Sign up at https://formspree.io (free: 50 msgs/month)
-            2. Create a form and copy your form ID (looks like: f/xabcdefg)
-            3. Replace YOUR_FORM_ID below with your actual ID
-          -->
-          <div class="contact-form-wrapper">
-            <form class="contact-form" action="https://formspree.io/f/xbdlkbya" method="POST">
-              <h2>Send a Message</h2>
-              
-              <input type="hidden" name="_subject" value="New message from Portfolio" />
-              <input type="text" name="_gotcha" style="display:none" />
-              
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required />
-              </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="What's this about?" />
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-full">
-                Send Message <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-
+    <main>
+      <header class="page-hero section-pad">
+        <div class="container narrow">
+          <p class="eyebrow">Contact</p>
+          <h1>Interested in Flutter, mobile, or full-stack mobile roles.</h1>
+          <p>I am open to junior/associate Flutter Developer, Mobile App Developer, and full-stack mobile opportunities where I can work on production apps, API integrations, Firebase, realtime features, backend collaboration, and client-facing product problems.</p>
         </div>
-
-        <!-- Values Section -->
-        <section class="values-section">
-          <h2>What I Value</h2>
-          <div class="values-grid">
-            <div class="value-card">
-              <i class="fas fa-code"></i>
-              <h3>Clean Code</h3>
-              <p>Writing maintainable, readable, and well-structured code that stands the test of time.</p>
-            </div>
-            <div class="value-card">
-              <i class="fas fa-lightbulb"></i>
-              <h3>Continuous Learning</h3>
-              <p>Always improving skills and staying updated with the latest technologies and best practices.</p>
-            </div>
-            <div class="value-card">
-              <i class="fas fa-rocket"></i>
-              <h3>Real Impact</h3>
-              <p>Building practical software that solves real problems and makes a difference.</p>
-            </div>
-          </div>
-        </section>
-
-      </div>
+      </header>
+      <section class="section-pad">
+        <div class="container contact-grid">
+          <a class="contact-card" href="mailto:sadimahmud225@gmail.com"><span>Email</span><strong>sadimahmud225@gmail.com</strong><p>Best for job opportunities and direct communication.</p></a>
+          <a class="contact-card" href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>github.com/kugelblitz84</strong><p>Code, repositories, and technical project history.</p></a>
+          <a class="contact-card" href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>md-sadi-mahmud</strong><p>Professional profile and career updates.</p></a>
+          <a class="contact-card" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer"><span>Resume</span><strong>Download PDF</strong><p>ATS-friendly one-page resume with updated internship/project experience.</p></a>
+        </div>
+      </section>
     </main>
-
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <img src="./assets/logo.png" alt="Logo" />
-            <p>Building practical software solutions</p>
-          </div>
-          <div class="footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h4>Connect</h4>
-            <div class="social-icons">
-              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:sadimahmud225@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+      <div class="container footer-grid">
+        <div>
+          <h2>Sadi Mahmud</h2>
+          <p>Flutter Developer focused on production mobile apps, backend/API collaboration, AI/realtime integrations, and clean engineering practices.</p>
         </div>
-        <div class="footer-bottom">
-          <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:sadimahmud225@gmail.com">Email</a>
+          <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
+      <div class="container footer-bottom">© <span id="year"></span> Sadi Mahmud. Built with static HTML, CSS, and JavaScript.</div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>

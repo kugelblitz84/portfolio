@@ -4,314 +4,176 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sadi Mahmud | Flutter Developer & Competitive Programmer</title>
-    <meta name="title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
-    <meta
-      name="description"
-      content="Portfolio of Sadi Mahmud, a Flutter-focused software developer and competitive programmer building scalable, production-ready mobile and full-stack applications."
-    />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="#" />
-    <meta property="og:title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
-    <meta
-      property="og:description"
-      content="Computer Science student and Flutter-focused software developer with strong problem-solving skills, competitive programming background, and real-world production experience."
-    />
-    <meta property="og:image" content="assets/profile-image.jpg" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="#" />
-    <meta property="twitter:title" content="Sadi Mahmud | Flutter Developer & Competitive Programmer" />
-    <meta
-      property="twitter:description"
-      content="Portfolio of Sadi Mahmud showcasing Flutter apps, full-stack projects, and competitive programming achievements."
-    />
-    <meta property="twitter:image" content="assets/profile-image.jpg" />
-
-    <!-- Favicons -->
+    <meta name="theme-color" content="#ffcd42" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
+    <link rel="preload" href="assets/profile-image.jpg" as="image" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/utilities.css" />
+    <title>Sadi Mahmud | Flutter Developer & Full-Stack Mobile Developer</title>
+    <meta name="title" content="Sadi Mahmud | Flutter Developer & Full-Stack Mobile Developer" />
+    <meta name="description" content="Portfolio of Sadi Mahmud, a Flutter Developer with backend/API experience, AI voice infrastructure work, realtime systems exposure, and client project ownership." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sadi Mahmud | Flutter Developer & Full-Stack Mobile Developer" />
+    <meta property="og:description" content="Flutter, GetX, Firebase, Node.js, REST APIs, AI voice systems, WebRTC/LiveKit, and production client project experience." />
+    <meta property="og:image" content="assets/profile-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sadi Mahmud",
+        "jobTitle": "Flutter Developer",
+        "email": "mailto:sadimahmud225@gmail.com",
+        "url": "https://kugelblitz84.github.io",
+        "sameAs": [
+          "https://github.com/kugelblitz84",
+          "https://www.linkedin.com/in/md-sadi-mahmud-976356313/"
+        ],
+        "knowsAbout": ["Flutter", "GetX", "Firebase", "REST APIs", "Node.js", "Express.js", "MongoDB", "LiveKit", "WebRTC", "Pipecat", "Competitive Programming"]
+      }
+    </script>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="container">
-        <h1 id="logo">
-          <a href="index.html"><img src="./assets/logo.png" alt="Sadi Mahmud logo" /></a>
-        </h1>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Sadi Mahmud home">
+          <img src="assets/logo.png" alt="Sadi Mahmud logo" width="44" height="44" />
+          <span>Sadi Mahmud</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
         <ul class="nav-menu">
           <li><a class="nav-link active" href="index.html">Home</a></li>
           <li><a class="nav-link" href="projects.html">Projects</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
-          <li>
-            <a
-              class="nav-link btn btn-primary"
-              href="assets/Sadi Mahmud_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Resume <i class="fas fa-arrow-right"></i></a>
-          </li>
-          <div class="theme-switch">
-            <input type="checkbox" id="switch" checked />
-            <label class="toggle-icons" for="switch">
-              <img class="moon" src="assets/moon.svg" alt="Dark mode" />
-              <img class="sun" src="assets/sun.svg" alt="Light mode" />
-            </label>
-          </div>
+          <li><a class="nav-link resume-link" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li class="theme-item"><button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero">
-      <div class="hero-content container">
-        <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Sadi Mahmud</h1>
-          <h2 class="hero-title">Flutter Developer <span>&</span> Competitive Programmer</h2>
-          <p class="hero-description">
-            Building real-world Flutter apps and full-stack products end-to-end,
-            from clean UI and APIs to deployment.
-          </p>
-          <div class="hero-cta">
-            <a href="projects.html" class="btn btn-primary">View Projects</a>
-            <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    <main>
+      <section class="hero section-pad">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Flutter Developer Intern at ShafaCode · Competitive Programmer</p>
+            <h1>Flutter Developer with backend/API, AI voice, and client project ownership experience.</h1>
+            <p class="hero-description">
+              I build production-oriented Flutter applications, API-integrated mobile features, Firebase flows, and client-focused tools. My recent work includes AI voice infrastructure migration, WebRTC/LiveKit deployment, sports API research, and full ownership of business applications.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="projects.html">View case studies</a>
+              <a class="btn btn-ghost" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+            </div>
+            <div class="quick-links" aria-label="Profile links">
+              <a href="mailto:sadimahmud225@gmail.com">sadimahmud225@gmail.com</a>
+              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
           </div>
-          <div class="hero-social">
-            <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:sadimahmud225@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-        </div>
-        <div class="hero-image">
-          <div class="hero-image-wrapper">
-            <img src="assets/profile-image.jpg" alt="Portrait of Sadi Mahmud" />
+          <div class="hero-card" aria-label="Sadi Mahmud profile summary">
+            <img src="assets/profile-image.jpg" alt="Portrait of Sadi Mahmud" width="420" height="420" />
+            <div class="hero-card-panel">
+              <strong>Current focus</strong>
+              <span>Flutter · Backend/API · AI/realtime systems · NestJS learning path</span>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <!-- Quick Stats -->
-    <section class="stats-section">
-      <div class="container">
-        <div class="stats-compartments">
-          <!-- Development Stats -->
-          <div class="stats-compartment">
-            <h3 class="compartment-title"><i class="fas fa-code"></i> Development</h3>
-            <div class="stats-grid">
-              <div class="stat-item">
-                <span class="stat-number">ChatterBox</span>
-                <span class="stat-label">Messenger App</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">pcIST</span>
-                <span class="stat-label">Club Management Platform</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">DPM</span>
-                <span class="stat-label">E-commerce Solution</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">Full-Stack</span>
-                <span class="stat-label">Flutter + Node.js</span>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Competitive Programming Stats -->
-          <div class="stats-compartment">
-            <h3 class="compartment-title"><i class="fas fa-trophy"></i> Competitive Programming</h3>
-            <div class="stats-grid">
-              <div class="stat-item">
-                <span class="stat-number">1000+</span>
-                <span class="stat-label">Problems Solved</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">ICPC</span>
-                <span class="stat-label">Regional 2024 & 2025</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">NCPC</span>
-                <span class="stat-label">Finalist 2023</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number">Codeforces Pupil</span>
-                <span class="stat-label">Problem Solver</span>
-              </div>
-            </div>
-          </div>
+      <section class="metrics section-tight">
+        <div class="container metrics-grid">
+          <article><strong>4.5 months</strong><span>Remote Flutter Developer Internship at ShafaCode</span></article>
+          <article><strong>$40 → $14</strong><span>Estimated AI voice cost optimization per 1,000 minutes</span></article>
+          <article><strong>80%</strong><span>API integration contribution on LandGuru real estate app</span></article>
+          <article><strong>1000+</strong><span>Programming problems solved across online judges</span></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Featured Projects Preview -->
-    <section class="featured-section">
-      <div class="container">
-        <div class="section-header">
-          <h2>Featured Work</h2>
-          <p>A selection of projects I've built & contributed to end-to-end</p>
+      <section class="section-pad">
+        <div class="container split-heading">
+          <div>
+            <p class="eyebrow">Featured work</p>
+            <h2>Projects selected to show real engineering contribution.</h2>
+          </div>
+          <a class="text-link" href="projects.html">See all projects →</a>
         </div>
-        <div class="featured-grid">
-          <a href="projects.html#pcist" class="featured-card">
-            <div class="featured-card-image">
-              <div class="featured-placeholder gradient-1">
-                <span>pcIST</span>
-              </div>
-            </div>
-            <div class="featured-card-content">
-              <h3>pcIST Platform</h3>
-              <p>Club management suite with real-time features</p>
-              <div class="featured-tags">
-                <span>Flutter</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
-              </div>
-            </div>
+        <div class="featured-grid container">
+          <a class="feature-card highlight" href="projects.html#ai-language-tutor">
+            <span class="badge">AI · Realtime · Deployment</span>
+            <h3>AI Language Tutor</h3>
+            <p>Migrated a costly GPT Realtime prototype to Pipecat + LiveKit, handled WebRTC deployment issues, split unstable async services, and implemented Flutter UI from Figma.</p>
+            <ul class="mini-tags"><li>Flutter</li><li>FastAPI</li><li>Pipecat</li><li>LiveKit</li><li>Railway</li></ul>
           </a>
-          <a href="projects.html#dhakaplastic" class="featured-card">
-            <div class="featured-card-image">
-              <div class="featured-placeholder gradient-2">
-                <span>DPM</span>
-              </div>
-            </div>
-            <div class="featured-card-content">
-              <h3>Dhaka Plastic & Metals</h3>
-              <p>Production deployment & development contribution</p>
-              <div class="featured-tags">
-                <span>DevOps</span>
-                <span>CI/CD</span>
-                <span>VPS</span>
-              </div>
-            </div>
+          <a class="feature-card" href="projects.html#marineledger">
+            <span class="badge">Client ownership</span>
+            <h3>MarineLedger</h3>
+            <p>Owned a shipping ledger/accounting app from client requirement analysis and UI/UX planning to Flutter implementation and delivery support.</p>
+            <ul class="mini-tags"><li>Flutter</li><li>GetX</li><li>Local-first</li><li>Business logic</li></ul>
           </a>
-          <a href="projects.html#chatterbox" class="featured-card">
-            <div class="featured-card-image">
-              <div class="featured-placeholder gradient-3">
-                <span>Chat</span>
-              </div>
-            </div>
-            <div class="featured-card-content">
-              <h3>ChatterBox</h3>
-              <p>Real-time messaging with social features</p>
-              <div class="featured-tags">
-                <span>Flutter</span>
-                <span>Firebase</span>
-              </div>
-            </div>
+          <a class="feature-card" href="projects.html#sports-score-platform">
+            <span class="badge">API research</span>
+            <h3>Live Sports Score Platform</h3>
+            <p>Researched affordable sports data providers, selected API-Football, documented endpoint mapping, and coordinated feature planning with backend developers.</p>
+            <ul class="mini-tags"><li>Flutter</li><li>GetX</li><li>API-Football</li><li>REST planning</li></ul>
+          </a>
+          <a class="feature-card" href="projects.html#pcist-platform">
+            <span class="badge">Full-stack</span>
+            <h3>pcIST Platform</h3>
+            <p>Club management suite with event/member management, admin chat, FCM push, automated PDFs, scheduled jobs, and contest tracking for 30+ CP platforms.</p>
+            <ul class="mini-tags"><li>Flutter</li><li>Node.js</li><li>MongoDB</li><li>Socket.IO</li><li>FCM</li></ul>
           </a>
         </div>
-        <div class="section-cta">
-          <a href="projects.html" class="btn btn-secondary">View All Projects <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Preview -->
-    <section class="skills-preview">
-      <div class="container">
-        <div class="section-header">
-          <h2>What I Do</h2>
-          <p>Core technologies and areas of expertise</p>
-        </div>
-        <div class="skills-preview-grid">
-          <div class="skill-preview-card">
-            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
-            <h3>Mobile Development</h3>
-            <p>Cross-platform Flutter apps with clean architecture and smooth UX</p>
-          </div>
-          <div class="skill-preview-card">
-            <div class="skill-icon"><i class="fas fa-server"></i></div>
-            <h3>Backend Engineering</h3>
-            <p>Node.js APIs, database design, and server deployment</p>
-          </div>
-          <div class="skill-preview-card">
-            <div class="skill-icon"><i class="fas fa-code"></i></div>
-            <h3>Problem Solving</h3>
-            <p>Algorithmic thinking from competitive programming experience</p>
-          </div>
-          <div class="skill-preview-card">
-            <div class="skill-icon"><i class="fas fa-rocket"></i></div>
-            <h3>DevOps</h3>
-            <p>CI/CD pipelines, VPS setup, and production deployment</p>
+      <section class="section-pad alt-section">
+        <div class="container split-heading">
+          <div>
+            <p class="eyebrow">Skill map</p>
+            <h2>Skillset presented by practical use, not just keywords.</h2>
           </div>
         </div>
-        <div class="section-cta">
-          <a href="about.html" class="btn btn-outline">Learn More About Me</a>
+        <div class="container skill-grid">
+          <article class="skill-card"><h3>Mobile development</h3><p>Flutter, GetX, Riverpod, Dio, ScreenUtil, SharedPreferences, custom theming, Figma-to-Flutter UI, state-driven app flows.</p></article>
+          <article class="skill-card"><h3>Backend & APIs</h3><p>Node.js, Express.js, FastAPI, REST APIs, JWT/OTP authentication, Zod validation, MongoDB/Mongoose, API documentation and response mapping.</p></article>
+          <article class="skill-card"><h3>Realtime / AI / Native</h3><p>LiveKit, WebRTC, Pipecat, STT/TTS integration, Socket.IO, Firebase FCM, Flutter platform channels, Android native services and permission-heavy flows.</p></article>
+          <article class="skill-card"><h3>Deployment & tooling</h3><p>Git, GitHub, GitHub Actions, Railway, VPS, Nginx, CI/CD, cPanel, SSL, production debugging, release support, and architecture guardrails.</p></article>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-      <div class="container">
-        <div class="cta-content">
-          <h2>Let's Build Something Together</h2>
-          <p>I'm currently looking for Junior Flutter Developer roles and opportunities to grow as a mobile-focused engineer.</p>
-          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+      <section class="cta section-pad">
+        <div class="container cta-card">
+          <p class="eyebrow">Open to opportunities</p>
+          <h2>Looking for Flutter, mobile, or full-stack mobile roles.</h2>
+          <p>I am especially interested in teams where mobile engineering overlaps with backend APIs, realtime systems, Firebase, AI integrations, or product-focused problem solving.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="contact.html">Contact me</a>
+            <a class="btn btn-ghost" href="projects.html">Explore projects</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand">
-            <img src="./assets/logo.png" alt="Logo" />
-            <p>Building practical software solutions</p>
-          </div>
-          <div class="footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-social">
-            <h4>Connect</h4>
-            <div class="social-icons">
-              <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-              <a href="mailto:sadimahmud225@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
-          </div>
+      <div class="container footer-grid">
+        <div>
+          <h2>Sadi Mahmud</h2>
+          <p>Flutter Developer focused on production mobile apps, backend/API collaboration, AI/realtime integrations, and clean engineering practices.</p>
         </div>
-        <div class="footer-bottom">
-          <p>© <span id="datee"></span> Sadi Mahmud. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:sadimahmud225@gmail.com">Email</a>
+          <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
       </div>
+      <div class="container footer-bottom">© <span id="year"></span> Sadi Mahmud. Built with static HTML, CSS, and JavaScript.</div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
