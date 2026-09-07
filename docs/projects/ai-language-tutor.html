@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffcd42" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <title>AI Language Tutor — Case Study | Sadi Mahmud</title>
+  <meta name="description" content="Reworked a costly voice prototype with Pipecat and LiveKit, then built the Flutter app flow.">
+  </head>
+  <body class="work-page case-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="../index.html" aria-label="Sadi Mahmud home">
+          <img src="../assets/logo.png" alt="Sadi Mahmud logo" width="44" height="44" />
+          <span>Sadi Mahmud</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link active" aria-current="page" href="../projects.html">Projects</a></li>
+          <li><a class="nav-link" href="../about.html">About</a></li>
+          <li><a class="nav-link" href="../contact.html">Contact</a></li>
+          <li><a class="nav-link resume-link" href="../assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+          <li class="theme-item"><button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main"><article>
+    <header class="case-hero container"><a class="back-link" href="../projects.html#ai-language-tutor">← All projects</a><p class="eyebrow">AI · Realtime platform</p><h1>AI Language Tutor</h1><p class="case-deck">Making realtime voice more practical.</p><div class="project-actions"></div></header>
+    <div class="case-cover container"><div class="type-cover type-cover-ai-language-tutor" aria-hidden="true"><span class="cover-kicker">AI · Realtime platform</span><strong>AI Language Tutor</strong><span class="cover-detail">Estimated cost: $40 → $14</span></div></div>
+    <dl class="case-facts container"><div><dt>Project</dt><dd>Professional / Client</dd></div><div><dt>My contribution</dt><dd>Architecture research &amp; Flutter</dd></div><div><dt>Focus</dt><dd>Estimated cost: $40 → $14</dd></div><div><dt>Core stack</dt><dd>Flutter · GetX · FastAPI</dd></div></dl>
+    <div class="case-layout container"><aside class="case-sidebar"><p class="eyebrow">In this case study</p><nav aria-label="Case study contents"><a href="#overview">Overview</a><a href="#challenge">The challenge</a><a href="#contribution">My contribution</a><a href="#outcome">The outcome</a></nav></aside><div class="case-prose">
+    <section id="overview" class="case-section"><p class="section-number">01 / Overview</p><h2>The product and my part in it.</h2><p>A realtime AI voice tutor where I helped move the project from an expensive prototype to a more practical Pipecat + LiveKit architecture, then implemented the Flutter app flow from Figma.</p><div class="role-note"><h3>My role</h3><p>Researched alternatives, migrated the architecture, solved WebRTC deployment limitations, stabilized async backend operations, deployed on Railway, and implemented the Flutter frontend after prototype validation.</p></div></section><section id="challenge" class="case-section"><p class="section-number">02 / The challenge</p><h2>What needed to change.</h2><p>The prototype used GPT Realtime API, which was not compatible with the cost margin at roughly $40 per 1,000 minutes. The project needed a cheaper architecture while keeping realtime voice interaction feasible.</p></section>
+    <section id="contribution" class="case-section"><p class="section-number">03 / My contribution</p><h2>From decisions to implementation.</h2><ul class="contribution-list">
+            <li>Migrated the voice architecture from GPT Realtime API to a Pipecat + LiveKit based solution.</li>
+            <li>Reduced estimated realtime voice cost from about $40 to $14 per 1,000 minutes by limiting paid usage mainly to STT/TTS services.</li>
+            <li>Implemented FastAPI session orchestration with LiveKit token generation, session start/end flow, and bot worker lifecycle handling.</li>
+            <li>Solved LAN-only WebRTC/STUN deployment limitations by moving to LiveKit-supported realtime transport.</li>
+            <li>Split unstable async service flow into separate session/token and bot-worker services to improve Railway deployment stability.</li>
+            <li>Connected the Flutter app flow with realtime session handling and implemented UI from Figma.</li>
+          </ul></section>
+    <section id="outcome" class="case-section"><p class="section-number">04 / The outcome</p><h2>Estimated cost: $40 → $14</h2><p>Reduced estimated voice cost from about $40 to $14 per 1,000 minutes and addressed realtime transport and deployment stability.</p><div class="stack-block"><h3>Tools & technologies</h3><div class="tech-stack"><span>Flutter</span><span>GetX</span><span>FastAPI</span><span>Pipecat</span><span>LiveKit</span><span>WebRTC</span><span>Railway</span><span>GitHub CI/CD</span><span>STT/TTS</span><span>Async debugging</span></div></div><p class="privacy-note">Private client/internal project — implementation details are summarized without exposing confidential code or credentials.</p><div class="project-actions"></div></section>
+    </div></div></article>
+    <nav class="next-project container" aria-label="More projects"><a class="back-link" href="../projects.html">← All projects</a><a href="marineledger.html"><span class="eyebrow">Next case study</span><strong>MarineLedger <span aria-hidden="true">↗</span></strong></a></nav></main>    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Sadi Mahmud</h2>
+          <p>Flutter Developer focused on production-ready mobile apps, API integration, Firebase, realtime features, and clean product engineering.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:sadimahmud225@gmail.com">Email</a>
+          <a href="https://github.com/kugelblitz84" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/md-sadi-mahmud-976356313/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="../assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">© <span id="year"></span> Sadi Mahmud. Built with static HTML, CSS, and JavaScript.</div>
+    </footer>
+    <script src="../js/script.js" defer></script>
+  </body>
+</html>

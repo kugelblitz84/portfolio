@@ -10,11 +10,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
-    <link rel="preload" href="assets/profile-image.jpg" as="image" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <title>Projects | Sadi Mahmud</title>
   </head>
-  <body>
+  <body class="work-page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <nav class="navbar" aria-label="Primary navigation">
       <div class="container nav-inner">
         <a class="brand" href="index.html" aria-label="Sadi Mahmud home">
@@ -26,7 +27,7 @@
         </button>
         <ul class="nav-menu">
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
           <li><a class="nav-link" href="about.html">About</a></li>
           <li><a class="nav-link" href="contact.html">Contact</a></li>
           <li><a class="nav-link resume-link" href="assets/Sadi Mahmud_CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
@@ -34,193 +35,48 @@
         </ul>
       </div>
     </nav>
-    <main>
-      <header class="page-hero section-pad">
-        <div class="container narrow">
-          <p class="eyebrow">Case studies</p>
-          <h1>Selected Flutter and product engineering work.</h1>
-          <p>These projects focus on what I personally contributed: Flutter implementation, API integration, client requirement analysis, Firebase flows, realtime/AI research, deployment problem solving, backend collaboration, and production release support including a published Google Play app.</p>
-        </div>
-      </header>
-
-      <section class="project-toolbar container" aria-label="Project filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="client">Client work</button>
-        <button class="filter-btn" data-filter="flutter">Flutter</button>
-        <button class="filter-btn" data-filter="backend">API &amp; Backend</button>
-        <button class="filter-btn" data-filter="ai">AI/Realtime</button>
-        <button class="filter-btn" data-filter="fullstack">Full-stack</button>
-      </section>
-
-      <section class="projects-list container" aria-label="Projects">
-        <article id="ai-language-tutor" class="project-card case-study" data-tags="client flutter backend ai realtime deployment">
-          <div class="project-meta"><span class="badge">Professional / Client</span><span>AI · Realtime · Deployment</span></div>
-          <h2>AI Language Tutor / Voice AI Platform</h2>
-          <p class="project-lead">A realtime AI voice tutor where I helped move the project from an expensive prototype to a more practical Pipecat + LiveKit architecture, then implemented the Flutter app flow from Figma.</p>
-          <div class="case-grid">
-            <div><h3>Context</h3><p>The prototype used GPT Realtime API, which was not compatible with the cost margin at roughly $40 per 1,000 minutes. The project needed a cheaper architecture while keeping realtime voice interaction feasible.</p></div>
-            <div><h3>My role</h3><p>Researched alternatives, migrated the architecture, solved WebRTC deployment limitations, stabilized async backend operations, deployed on Railway, and implemented the Flutter frontend after prototype validation.</p></div>
-          </div>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Migrated the voice architecture from GPT Realtime API to a Pipecat + LiveKit based solution.</li>
-            <li>Reduced estimated realtime voice cost from about $40 to $14 per 1,000 minutes by limiting paid usage mainly to STT/TTS services.</li>
-            <li>Implemented FastAPI session orchestration with LiveKit token generation, session start/end flow, and bot worker lifecycle handling.</li>
-            <li>Solved LAN-only WebRTC/STUN deployment limitations by moving to LiveKit-supported realtime transport.</li>
-            <li>Split unstable async service flow into separate session/token and bot-worker services to improve Railway deployment stability.</li>
-            <li>Connected the Flutter app flow with realtime session handling and implemented UI from Figma.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>FastAPI</span><span>Pipecat</span><span>LiveKit</span><span>WebRTC</span><span>Railway</span><span>GitHub CI/CD</span><span>STT/TTS</span><span>Async debugging</span></div>
-          <p class="privacy-note">Private client/internal project — implementation details are summarized without exposing confidential code or credentials.</p>
-        </article>
-
-        <article id="marineledger" class="project-card case-study" data-tags="client flutter business">
-          <div class="project-meta"><span class="badge">Professional / Client</span><span>Full ownership · Business logic</span></div>
-          <h2>MarineLedger — Shipping Ledger & Accounts App</h2>
-          <p class="project-lead">A private shipping ledger and accounts app where I handled client communication, requirement analysis, UI/UX planning, Flutter implementation, and delivery support.</p>
-          <div class="case-grid">
-            <div><h3>Context</h3><p>The client needed a private tool for shipping ledger management, account calculation, operational records, and practical daily usage. The budget did not include a dedicated backend.</p></div>
-            <div><h3>My role</h3><p>Acted as the representative developer from ShafaCode, communicated with the client, understood their business model, suggested features and usage flows, designed the UI/UX, and built the Flutter app.</p></div>
-          </div>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Communicated directly with the client to understand shipping workflows, accounting model, and operational constraints.</li>
-            <li>Designed and implemented the Flutter UI/UX and core app flow from scratch.</li>
-            <li>Built ledger/accounting flows, operational records, transaction/calculation logic, and business-specific data handling.</li>
-            <li>Implemented local-first functionality and safeguards appropriate for a private isolated business environment.</li>
-            <li>Provided consultation on feature usage and practical improvements based on the client’s working process.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Local storage</span><span>Business logic</span><span>UI/UX planning</span><span>Client communication</span><span>Requirement analysis</span></div>
-          <p class="privacy-note">Private client project — public demo/source is not shared.</p>
-        </article>
-
-        <article id="kickscore" class="project-card case-study" data-tags="client flutter backend api">
-          <div class="project-meta"><span class="badge">Professional / Client · Published</span><span>Google Play release · API strategy · Flutter UI</span></div>
-          <h2>KickScore — Published Live Football Score App</h2>
-          <p class="project-lead">KickScore is a published live football score application on Google Play. I contributed to the project through sports data provider research, API feature mapping, backend coordination, and Flutter UI implementation.</p>
-          <div class="case-grid">
-            <div><h3>Context</h3><p>The client wanted a FotMob-style football score experience, but enterprise sports data providers like Opta and StatsPerform were too costly for the MVP budget. The project needed a more affordable data source while still supporting live scores, fixtures, standings, teams, players, and match details.</p></div>
-            <div><h3>My role</h3><p>I researched sports data providers, selected API-Football based on cost and feature coverage, documented endpoint mapping, identified composite API requirements, coordinated with backend developers, and implemented the Flutter frontend UI.</p></div>
-          </div>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Researched and selected API-Football as a lower-cost alternative to enterprise providers like Opta and StatsPerform.</li>
-            <li>Documented endpoint mapping for live scores, fixtures, standings, teams, players, match details, and related football data flows.</li>
-            <li>Identified composite features requiring multiple API responses and helped plan backend-side aggregation strategy.</li>
-            <li>Coordinated with backend developers on API usage, response structure, feature feasibility, and data limitations.</li>
-            <li>Implemented the Flutter UI for the football score experience using production-style app structure.</li>
-            <li>Contributed to production-readiness for the Google Play release.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>API-Football</span><span>REST API research</span><span>Feature mapping</span><span>Backend collaboration</span><span>Technical documentation</span><span>Custom Painter</span><span>Google Play release</span></div>
-          <p class="privacy-note">Professional client project — public source is not shared, but the app is available on Google Play.</p>
-          <div class="project-actions"><a class="btn btn-small btn-ghost" href="https://play.google.com/store/apps/details?id=com.msunited.kicscore&pcampaignid=web_share" target="_blank" rel="noopener noreferrer">View on Google Play</a></div>
-        </article>
-
-        <article id="landguru" class="project-card case-study" data-tags="client flutter backend api firebase">
-          <div class="project-meta"><span class="badge">Professional / Client</span><span>Flutter UI · API integration</span></div>
-          <h2>LandGuru — Real Estate Platform</h2>
-          <p class="project-lead">A real estate app where I converted Figma designs into Flutter screens and completed major API integration work across authentication, property, user, agent, and file/image flows.</p>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Fully implemented the Flutter UI using Figma design references.</li>
-            <li>Completed approximately 80% of the API integration across the application.</li>
-            <li>Worked with authentication, user/agent modules, property flows, shared services, file/image handling, and token-based API communication.</li>
-            <li>Contributed to a larger production-style Flutter codebase using GetX, Dio, Firebase, and modular feature structure.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Dio</span><span>REST APIs</span><span>Firebase</span><span>Figma implementation</span><span>Token-based auth</span><span>File upload</span></div>
-          <p class="privacy-note">Private client/internal project — public source is not shared.</p>
-          <div class="project-actions"><a class="btn btn-small btn-ghost" href="assets/project/apks/landguru.apk" download>Download APK</a></div>
-        </article>
-
-        <article id="focus" class="project-card case-study" data-tags="client flutter native firebase">
-          <div class="project-meta"><span class="badge">Professional / Client</span><span>Native Android · Platform channels</span></div>
-          <h2>Focus — Flutter App with Native Features</h2>
-          <p class="project-lead">A Flutter project requiring native device-level functionality beyond standard UI development.</p>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Worked on selected modules from the partial codebase involving native Android integrations.</li>
-            <li>Implemented Flutter features that communicate with native Android functionality through platform channels.</li>
-            <li>Handled permission-heavy flows and native device capability integration.</li>
-            <li>Contributed to background/native behavior and app flows involving Firebase and local notifications.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>Platform channels</span><span>Android native</span><span>Firebase</span><span>Permissions</span><span>Background behavior</span></div>
-        </article>
-
-        <article id="pcist-platform" class="project-card case-study" data-tags="flutter backend fullstack realtime firebase">
-          <div class="project-meta"><span class="badge">Full-stack / Personal</span><span>Flutter · Node.js · Realtime</span></div>
-          <h2>pcIST Platform — Club Management Suite</h2>
-          <p class="project-lead">A full-stack platform for digitalizing club operations, member management, event workflows, realtime communication, and competitive programming contest tracking.</p>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Built event/member management, event gallery, admin chat, FCM push notifications, and contest tracking for 30+ competitive programming platforms.</li>
-            <li>Implemented JWT/OTP authentication, role-based access control, Zod request validation, automated PDF generation, email workflows, and scheduled background tasks.</li>
-            <li>Designed the mobile app with Flutter/GetX and built backend APIs with Express 5, MongoDB, Mongoose, Socket.IO, Cloudinary, Puppeteer, Nodemailer, and Agenda.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Node.js</span><span>Express 5</span><span>MongoDB</span><span>Socket.IO</span><span>FCM</span><span>Cloudinary</span><span>JWT/OTP</span><span>Zod</span><span>Puppeteer</span></div>
-          <div class="project-media" aria-label="pcIST video walkthroughs">
-            <div class="project-media-head">
-              <div>
-                <h3>Compact walkthroughs</h3>
-                <p>Short previews of the main member, login, event, and document flows.</p>
-              </div>
-            </div>
-            <div class="project-media-grid">
-              <figure class="project-media-item">
-                <video controls preload="metadata" playsinline src="assets/project/pcIST/Membership%20Managing.mp4"></video>
-                <figcaption>Membership managing</figcaption>
-              </figure>
-              <figure class="project-media-item">
-                <video controls preload="metadata" playsinline src="assets/project/pcIST/Login%20%26%20Dashboards.mp4"></video>
-                <figcaption>Login and dashboards</figcaption>
-              </figure>
-              <figure class="project-media-item">
-                <video controls preload="metadata" playsinline src="assets/project/pcIST/Events%20%26%20Contest%20Tracking.mp4"></video>
-                <figcaption>Events and contest tracking</figcaption>
-              </figure>
-              <figure class="project-media-item">
-                <video controls preload="metadata" playsinline src="assets/project/pcIST/Document%20creation.mp4"></video>
-                <figcaption>Document creation</figcaption>
-              </figure>
-            </div>
-          </div>
-          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/pcist" target="_blank" rel="noopener noreferrer">GitHub</a><a class="btn btn-small btn-ghost" href="https://drive.google.com/file/d/15Di_1UT_DVfrbNZyh-hxq4hefiqwF03j/view?usp=drive_link" target="_blank" rel="noopener noreferrer">APK</a></div>
-        </article>
-
-        <article id="dpm" class="project-card case-study" data-tags="fullstack backend deployment">
-          <div class="project-meta"><span class="badge">Production contribution</span><span>Web · API · DevOps</span></div>
-          <h2>Dhaka Plastic & Metals — E-commerce Production System</h2>
-          <p class="project-lead">A production e-commerce platform with customer site, admin panel, backend API, analytics, deployment automation, and SEO improvements.</p>
-          <h3>Key contributions</h3>
-          <ul class="contribution-list">
-            <li>Contributed to development and production deployment across customer site, admin panel, and API.</li>
-            <li>Established CI/CD using GitHub Actions and SSH automation for VPS deployment.</li>
-            <li>Delivered 30+ features including staff analytics, performance charts, and payment installment system.</li>
-            <li>Applied SEO improvements such as meta tags, Open Graph, URL canonicalization through Nginx, and mobile optimization.</li>
-          </ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>TypeScript</span><span>React</span><span>Node.js</span><span>Express</span><span>REST APIs</span><span>GitHub Actions</span><span>Nginx</span><span>VPS</span><span>cPanel</span><span>SSL</span><span>SEO</span></div>
-          <div class="project-actions"><a class="btn btn-small" href="https://dpmsign.com" target="_blank" rel="noopener noreferrer">Live site</a></div>
-        </article>
-
-        <article id="chatterbox" class="project-card case-study" data-tags="flutter firebase realtime">
-          <div class="project-meta"><span class="badge">Earlier Flutter project</span><span>Messaging · Firebase</span></div>
-          <h2>ChatterBox — Real-time Messaging App</h2>
-          <p class="project-lead">A peer-to-peer messaging app with social graph features, private chatrooms, and realtime presence tracking.</p>
-          <ul class="contribution-list"><li>Implemented Firebase Authentication, Cloud Firestore persistence, private messaging flows, and social-network style user interactions.</li></ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>GetX</span><span>Firebase Authentication</span><span>Cloud Firestore</span><span>FlutterFire CLI</span><span>Realtime data</span></div>
-          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/ChatterBox" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-        </article>
-
-        <article id="medicare" class="project-card case-study" data-tags="flutter firebase">
-          <div class="project-meta"><span class="badge">Earlier Flutter project</span><span>Healthcare workflow</span></div>
-          <h2>MediCare — Hospital Management System</h2>
-          <p class="project-lead">A multi-role hospital management app with appointment scheduling, double-booking prevention, and role-based Firebase access.</p>
-          <ul class="contribution-list"><li>Implemented business logic, custom theming, state management, role-specific flows, appointment scheduling, and Firebase-backed access control.</li></ul>
-          <div class="tech-stack"><strong>Skills shown:</strong><span>Flutter</span><span>Riverpod</span><span>GetX</span><span>Firebase Auth</span><span>Cloud Firestore</span><span>SharedPreferences</span><span>Material Design</span></div>
-          <div class="project-actions"><a class="btn btn-small" href="https://github.com/kugelblitz84/hospital-manager-uni" target="_blank" rel="noopener noreferrer">GitHub</a></div>
-        </article>
-      </section>
-    </main>
-    <footer class="footer">
+    <main id="main">
+  <header class="work-hero container"><p class="eyebrow">Selected work / 01—09</p><div class="work-intro"><h1>Products with purpose.<br><span>Engineering with care.</span></h1><p>A selection of mobile apps and platforms. The problems behind them, the decisions that shaped them, and my contribution to bringing them to life.</p></div></header>
+  <section class="container work-collection" aria-label="Selected projects"><div class="work-toolbar"><div class="project-toolbar" role="group" aria-label="Project filters"><button type="button" class="filter-btn active" data-filter="all" aria-pressed="true" aria-controls="project-grid">All work</button><button type="button" class="filter-btn " data-filter="client" aria-pressed="false" aria-controls="project-grid">Client work</button><button type="button" class="filter-btn " data-filter="flutter" aria-pressed="false" aria-controls="project-grid">Flutter</button><button type="button" class="filter-btn " data-filter="backend" aria-pressed="false" aria-controls="project-grid">API &amp; Backend</button><button type="button" class="filter-btn " data-filter="ai" aria-pressed="false" aria-controls="project-grid">AI / Realtime</button><button type="button" class="filter-btn " data-filter="fullstack" aria-pressed="false" aria-controls="project-grid">Full-stack</button></div><p id="project-count" role="status" aria-live="polite">9 projects</p></div>
+  <div id="project-grid" class="work-grid"><article id="kickscore" class="project-card work-card" data-tags="client flutter backend api">
+      <a class="work-cover" href="projects/kickscore.html" tabindex="-1" aria-hidden="true"><img src="assets/project/optimized/kickscore-4k-kicscore-1600.jpg" srcset="assets/project/optimized/kickscore-4k-kicscore-720.jpg 720w, assets/project/optimized/kickscore-4k-kicscore-1600.jpg 1600w" sizes="(max-width: 700px) calc(100vw - 32px), 550px" width="1600" height="900" alt="KickScore app interface overview" fetchpriority="high" decoding="async"></a>
+      <div class="work-card-copy"><p class="work-category">Sports · Mobile application</p><h2><a href="projects/kickscore.html">KickScore</a></h2><p class="work-summary">Sports data research, API mapping, and a Flutter interface for a published football score app.</p>
+      <div class="work-card-bottom"><span>Google Play release</span><a class="case-link" href="projects/kickscore.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: KickScore</span></a></div></div>
+    </article><article id="landguru" class="project-card work-card" data-tags="client flutter backend api firebase">
+      <a class="work-cover" href="projects/landguru.html" tabindex="-1" aria-hidden="true"><img src="assets/project/optimized/landguru-land-1600.jpg" srcset="assets/project/optimized/landguru-land-720.jpg 720w, assets/project/optimized/landguru-land-1600.jpg 1600w" sizes="(max-width: 700px) calc(100vw - 32px), 550px" width="1600" height="900" alt="LandGuru app interface overview" loading="lazy" decoding="async"></a>
+      <div class="work-card-copy"><p class="work-category">Real estate · Mobile application</p><h2><a href="projects/landguru.html">LandGuru</a></h2><p class="work-summary">Figma-to-Flutter implementation connecting property, agent, authentication, and file upload flows.</p>
+      <div class="work-card-bottom"><span>~80% of API integration</span><a class="case-link" href="projects/landguru.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: LandGuru</span></a></div></div>
+    </article><article id="ai-language-tutor" class="project-card work-card" data-tags="client flutter backend ai realtime deployment">
+      <a class="work-cover" href="projects/ai-language-tutor.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-ai-language-tutor" aria-hidden="true"><span class="cover-kicker">AI · Realtime platform</span><strong>AI Language Tutor</strong><span class="cover-detail">Estimated cost: $40 → $14</span></div></a>
+      <div class="work-card-copy"><p class="work-category">AI · Realtime platform</p><h2><a href="projects/ai-language-tutor.html">AI Language Tutor</a></h2><p class="work-summary">Reworked a costly voice prototype with Pipecat and LiveKit, then built the Flutter app flow.</p>
+      <div class="work-card-bottom"><span>Estimated cost: $40 → $14</span><a class="case-link" href="projects/ai-language-tutor.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: AI Language Tutor</span></a></div></div>
+    </article><article id="marineledger" class="project-card work-card" data-tags="client flutter business">
+      <a class="work-cover" href="projects/marineledger.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-marineledger" aria-hidden="true"><span class="cover-kicker">Shipping · Business application</span><strong>MarineLedger</strong><span class="cover-detail">From requirements to delivery</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Shipping · Business application</p><h2><a href="projects/marineledger.html">MarineLedger</a></h2><p class="work-summary">A local-first shipping ledger, owned from client conversations and UI planning to implementation.</p>
+      <div class="work-card-bottom"><span>From requirements to delivery</span><a class="case-link" href="projects/marineledger.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: MarineLedger</span></a></div></div>
+    </article><article id="pcist-platform" class="project-card work-card" data-tags="flutter backend fullstack realtime firebase">
+      <a class="work-cover" href="projects/pcist-platform.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-pcist-platform" aria-hidden="true"><span class="cover-kicker">Community · Full-stack application</span><strong>pcIST Platform</strong><span class="cover-detail">30+ contest platforms</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Community · Full-stack application</p><h2><a href="projects/pcist-platform.html">pcIST Platform</a></h2><p class="work-summary">Membership, events, realtime chat, and contest tracking in one full-stack club platform.</p>
+      <div class="work-card-bottom"><span>30+ contest platforms</span><a class="case-link" href="projects/pcist-platform.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: pcIST Platform</span></a></div></div>
+    </article><article id="dpm" class="project-card work-card" data-tags="fullstack backend deployment">
+      <a class="work-cover" href="projects/dpm.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-dpm" aria-hidden="true"><span class="cover-kicker">Commerce · Web platform</span><strong>Dhaka Plastic &amp; Metals</strong><span class="cover-detail">30+ features delivered</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Commerce · Web platform</p><h2><a href="projects/dpm.html">Dhaka Plastic &amp; Metals</a></h2><p class="work-summary">Production contributions across storefront, administration, APIs, and automated deployment.</p>
+      <div class="work-card-bottom"><span>30+ features delivered</span><a class="case-link" href="projects/dpm.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: Dhaka Plastic &amp; Metals</span></a></div></div>
+    </article><article id="focus" class="project-card work-card" data-tags="client flutter native firebase">
+      <a class="work-cover" href="projects/focus.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-focus" aria-hidden="true"><span class="cover-kicker">Android · Mobile application</span><strong>Focus</strong><span class="cover-detail">Platform channel integration</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Android · Mobile application</p><h2><a href="projects/focus.html">Focus</a></h2><p class="work-summary">Native device features, permissions, and background flows inside a Flutter application.</p>
+      <div class="work-card-bottom"><span>Platform channel integration</span><a class="case-link" href="projects/focus.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: Focus</span></a></div></div>
+    </article><article id="chatterbox" class="project-card work-card" data-tags="flutter firebase realtime">
+      <a class="work-cover" href="projects/chatterbox.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-chatterbox" aria-hidden="true"><span class="cover-kicker">Messaging · Flutter application</span><strong>ChatterBox</strong><span class="cover-detail">Realtime messaging flows</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Messaging · Flutter application</p><h2><a href="projects/chatterbox.html">ChatterBox</a></h2><p class="work-summary">Private conversations, social connections, and presence tracking powered by Firebase.</p>
+      <div class="work-card-bottom"><span>Realtime messaging flows</span><a class="case-link" href="projects/chatterbox.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: ChatterBox</span></a></div></div>
+    </article><article id="medicare" class="project-card work-card" data-tags="flutter firebase">
+      <a class="work-cover" href="projects/medicare.html" tabindex="-1" aria-hidden="true"><div class="type-cover type-cover-medicare" aria-hidden="true"><span class="cover-kicker">Healthcare · Flutter application</span><strong>MediCare</strong><span class="cover-detail">Role-based appointment flows</span></div></a>
+      <div class="work-card-copy"><p class="work-category">Healthcare · Flutter application</p><h2><a href="projects/medicare.html">MediCare</a></h2><p class="work-summary">A multi-role hospital app with scheduling, double-booking prevention, and Firebase access control.</p>
+      <div class="work-card-bottom"><span>Role-based appointment flows</span><a class="case-link" href="projects/medicare.html">Read case study <span aria-hidden="true">↗</span><span class="sr-only">: MediCare</span></a></div></div>
+    </article></div></section>
+  <section class="work-cta container"><p class="eyebrow">Have something in mind?</p><h2>Let’s build something useful.</h2><a class="btn btn-primary" href="contact.html">Get in touch <span aria-hidden="true">↗</span></a></section>
+</main>    <footer class="footer">
       <div class="container footer-grid">
         <div>
           <h2>Sadi Mahmud</h2>
